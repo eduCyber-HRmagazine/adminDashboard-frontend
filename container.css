@@ -1,0 +1,393 @@
+:root {
+    /* Color Definitions */
+    --bg-light: white; /* white for light theme navbar */
+    --bg-dark: #535455; /* dark theme navbar */
+    --text-color-light: #333; /* Dark text for light theme */
+    --text-color-dark: #fafafa; /* Light text for dark theme */
+    --icon-bg-light: white; /* Matching light theme navbar */
+    --icon-bg-dark:#535455; /* Matching dark theme navbar */
+}
+
+/* Adjusting for sun and moon icons specifically */
+.fa-sun {
+    color: #FFC107; /* Golden color for the sun icon */
+}
+/* Light Theme Styles */
+.light-theme, .light-theme .menu a, .light-theme .submenu a,
+.light-theme .menu a:link, .light-theme .menu a:visited, .light-theme .menu a:hover, .light-theme .menu a:active,
+.light-theme .submenu a:link, .light-theme .submenu a:visited, .light-theme .submenu a:hover, .light-theme .submenu a:active {
+    background-color: var(--bg-light);
+    color: var(--text-color-light);
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Dark Theme Styles */
+.dark-theme, .dark-theme .menu a, .dark-theme .submenu a,
+.dark-theme .menu a:link, .dark-theme .menu a:visited, .dark-theme .menu a:hover, .dark-theme .menu a:active,
+.dark-theme .submenu a:link, .dark-theme .submenu a:visited, .dark-theme .submenu a:hover, .dark-theme .submenu a:active {
+    background-color: var(--bg-dark);
+    color: var(--text-color-dark);
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* general Styles ////////////////////////////////////////////////////*/
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.container{
+    display:flex;
+    flex-direction: column;
+}
+
+/* Navbar Styles //////////////////////////////////////////////////////*/
+.navbar {
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 50px;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid grey; /* Grey bottom border */
+}
+.left-navbar-items{
+    display:flex;
+    direction: row;
+    align-items: center;
+    column-gap: 40px;
+}
+.navbar-brand{
+    text-decoration: none;
+    color:black;
+}
+.logo { 
+    height: 50px;
+}
+#user-type{
+    font-size:30px;
+    font-weight:bold;
+    margin-top: 40px;
+}
+#magazine{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size:60px;
+    font-weight:500;
+}
+.right-navbar-icons{
+    display: flex;
+    flex-direction: row;
+    column-gap: 15px;
+    align-items: center;
+    justify-content: center;
+}
+.icon-btn{
+    width:60px;
+    height:60px;
+    border:none;
+}
+/* Avatar styling */
+.avatar {
+    position:relative;
+    width: 60px; 
+    height: 60px; 
+    border-radius: 50%; /* Circle shape */
+}/* Speech Bubble Styles */
+.speech-bubble {
+    position: absolute;
+    z-index: 1; /* Ensure it appears above other content */
+    width: 235px;
+    height:350px;
+    background-color: white;
+    border-radius: 8px;
+    border:1px solid rgb(187, 187, 187);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    display: none; /* Initially hidden */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    top:85px; 
+    left: 90%;
+    transform: translateX(-50%); /* Center align the bubble below the avatar */
+    transition: visibility 0.3s, opacity 0.3s ease-in-out;
+    visibility: hidden; /* Use with opacity for a fade effect */
+}
+
+/* Speech Bubble visible state */
+.speech-bubble.visible {
+    display: flex; /* Make the bubble visible */
+    visibility: visible;
+    opacity:1;
+}
+
+/* Avatar image inside the speech bubble */
+.speech-avatar {
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; /* Circular avatar */
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+/* Username styling */
+.speech-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 30px; /* Space between name and options */
+}
+
+/* Options below the name */
+.speech-options {
+    width: 90%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; 
+}
+
+/* Styling for icons in options */
+.speech-options .profile-icon {
+    font-size: 15px;
+    font-weight: 400;
+}
+.speech-options .profile-icon i{
+    margin-right: 8px;
+}
+.speech-options button{
+    font-size: 20px;
+    font-weight: 500;
+    border:none;
+    background-color: white;
+}
+
+/* Horizontal rule for visual separation */
+.speech-bubble hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin-bottom: 10px; /* Space between HR and sign-out button */
+}
+
+/* Sign-out button styling */
+.sign-out-btn {
+    width: 90%;
+    margin: 25px 2px 15px 2px;
+    padding: 10px 2px 10px 2px;
+    font-size: 14px;
+    color: #515050; 
+    border: 1px solid rgb(183, 182, 182);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.speech-footer{
+    font-size: 10px;
+    font-weight: 700;
+    color:grey;
+}
+/***************************************************************/
+
+/* Sidebar and main content wrapper Styles ////////////////////*/
+.content-aside-wrapper{
+    display:flex;
+    flex-direction: row;
+}
+    /* Sidebar Styles //////////////////////////////////////////*/
+    /* Sidebar Container */
+    .sidebar {
+    width: 270px; /* Sidebar width */
+    height: 100vh; /* Full viewport height */
+    overflow-y: auto; /* Enable scrolling for overflow content */
+    padding-top: 20px; 
+    border-right: 1px solid grey;
+    }
+
+    /* Menu List */
+    .menu {
+    list-style: none; /* Remove default list style */
+    margin: 0px;
+    padding: 0 10px 0 20px;
+    }
+
+    /* Menu Items */
+    .menu li {
+    padding: 15px 15px 20px 0; /* Padding for menu items */ 
+    }
+
+    /* Summary Divs */
+    .summary {
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: flex;
+    justify-content: space-between; /* Space between title and arrow icon */
+    align-items: center;
+    }
+
+    /* Submenu List */
+    .submenu {
+    list-style: none;
+    margin-left: 10px; /* Slight indent for submenu */
+    padding: 0;
+    display: none; /* Initially hide submenu */
+    }
+
+    /* Submenu Items */
+    .submenu li {
+    padding: 8px 20px; /* Padding for submenu items */
+    border-left: 2px solid rgb(105, 105, 105); /* Highlight for submenu items */
+    }
+
+    /* Links Styling */
+    .menu a, .submenu a {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link occupy the full list item space */
+    }
+
+    /* Icon Styling */
+    .summary i {
+    transition: transform 0.3s ease; /* Smooth transition for icon rotation */
+    }
+
+    
+    /* Display Submenu when it's meant to be shown */
+    .submenu.shown {
+    display: block; /* Show submenu */
+    }
+
+    /* Rotate icon when submenu is shown */
+    .summary i.rotated {
+    transform: rotate(180deg); /* Rotate icon */
+    }
+
+     
+    /***********************************************************/
+    /* Main Content Area Styles ///////////////////////////////*/
+    .content {
+    width:90%;
+    display: flex;
+    flex-direction: column;
+    }
+
+    .breadcrumb, .title {
+    margin-top: 30px;
+    margin-left: 30px;
+    }
+
+
+/**************************************************************************************************************/
+/**************************************************************************************************************/
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .container {
+        max-width: 460px; 
+        margin: 0 auto; 
+        padding: 0 10px;
+    }
+    .navbar {
+        height: 80px; 
+        padding: 0px;
+    }
+    .left-navbar-items{
+        column-gap: 20px;
+    }
+    .logo { 
+        height: 25px;
+    }
+    #user-type{
+        font-size:18px;
+        margin-top: 20px;
+    }
+    #magazine{
+        font-size:30px;
+    }
+    .right-navbar-icons{
+        column-gap:5px;
+    }
+    .icon-btn{
+        width:35px;
+        height:35px;
+    }
+    /* Avatar styling */
+    .avatar {
+        width: 45px; 
+        height: 45px; 
+    }/* Speech Bubble Styles */
+    .speech-bubble {
+       
+        width:200px;
+        height:350px;
+        padding: 7px;
+        top:85px; 
+        left: 70%;
+    }
+    .sidebar {
+        width: 160px; /* Sidebar width */
+        height: 100vh; /* Full viewport height */
+        overflow-x:auto;
+    } 
+}
+/**************************************************************************************************************/
+/**************************************************************************************************************/
+@media only screen and (min-width: 480px) and (max-width: 710px) {
+    .container {
+        max-width: 690px; 
+        margin: 0 auto; 
+        padding: 0 10px;
+    }
+    .navbar {
+        height: 80px; 
+        padding: 0px;
+    }
+    .left-navbar-items{
+        column-gap: 20px;
+    }
+    .logo { 
+        height: 25px;
+    }
+    #user-type{
+        font-size:18px;
+        margin-top: 20px;
+    }
+    #magazine{
+        font-size:30px;
+    }
+    .right-navbar-icons{
+        column-gap:5px;
+    }
+    .icon-btn{
+        width:35px;
+        height:35px;
+    }
+    /* Avatar styling */
+    .avatar {
+        width: 45px; 
+        height: 45px; 
+    }/* Speech Bubble Styles */
+    .speech-bubble {
+        width:200px;
+        height:350px;
+        padding: 7px;
+        top:85px; 
+        left:82%;
+    }
+    .sidebar {
+        width: 220px; /* Sidebar width */
+        height: 100vh; /* Full viewport height */
+        overflow-x:auto;
+    } 
+}
+/**************************************************************************************************************/
+/**************************************************************************************************************/
+@media screen and (min-width: 710px) and (max-width: 1024px) {
+    .speech-bubble {
+        width:200px;
+        height:350px;
+        padding: 7px;
+        top:85px; 
+        left:87%;
+    }
+}

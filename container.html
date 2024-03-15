@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <link rel="stylesheet" href="container.css">
+</head>
+<body>
+  <div class="container"> 
+    <!-----Navbar-------> 
+    <nav class="navbar">
+        <div class="left-navbar-items">
+            <a href="#" class="navbar-brand">
+               <img class="logo" src="assets/images/hr-logo.png" alt="Logo" >
+               <span id="magazine">Magazine</span>
+            </a>
+            <p id="user-type">Admin</p>
+        </div>
+        <div class="right-navbar-icons">
+            <button type="button" class="icon-btn" title="Toggle Theme" id="theme-toggle-btn">
+                <i class="fas fa-sun"></i> 
+            </button>
+            <img class="avatar" src="assets/images/avatar-default.png" alt="Avatar" >
+                <!-- Speech Bubble Content -->
+                <div class="speech-bubble hidden">
+                     <img src="assets/images/avatar-default.png" alt="Avatar" class="speech-avatar">
+                     <div class="speech-name">Username</div>
+                          <div class="speech-options">
+                              <div class="profile-icon"><i class="fas fa-user"></i><span>Profile</span></div>
+                              <button type="button">Edit Profile</button>
+                          </div>
+                          <hr>
+                          <button type="button" class="sign-out-btn"><i class="fas fa-sign-out-alt"></i>Sign Out</button>
+                          <p class="speech-footer">Privacy Policy . Terms . Cookies</p>
+                </div> 
+        </div>
+    </nav>
+    <!----End Navbar---->
+    <div class="content-aside-wrapper">
+        <!------------------------------------------------------------------------------------------------------>
+        <!-- Sidebar Start -->
+        <aside class="sidebar">
+            <ul class="menu">
+            <!-- Main Category: Users Start -->
+               <li>
+                 <div class="summary">Users <i class="fas fa-chevron-down"></i></div>
+                 <ul class="submenu hidden">
+                    <!-- Sub Category: Admin Start -->
+                    <li>
+                       <div class="summary">Admin <i class="fas fa-chevron-down"></i></div>
+                       <ul class="submenu hidden">
+                          <li><a href="#">Add admin</a></li>
+                          <li><a href="#">Admins</a></li>
+                       </ul>
+                    </li>
+                    <!-- Sub Category: Admin End -->
+                
+                    <!-- Sub Category: Author Start -->
+                    <li>
+                      <div class="summary">Author <i class="fas fa-chevron-down"></i></div>
+                      <ul class="submenu hidden">
+                        <li><a href="#">Add author</a></li>
+                        <li><a href="#">Authors</a></li>
+                      </ul>
+                    </li>
+                    <!-- Sub Category: Author End -->
+                
+                    <!-- Sub Category: Job Seeker Start -->
+                    <li><a href="#">Job seekers</a></li>
+                    <!-- Sub Category: Job Seeker End -->
+                
+                    <!-- Sub Category: Employer Start -->
+                    <li><a href="#">Employers</a></li>
+                    <!-- Sub Category: Employer End -->
+               </ul>
+            </li>
+            <!-- Main Category: Users End -->
+
+            <!-- Main Category: Articles -->
+        <li>
+            <div class="summary">Articles <i class="fas fa-chevron-down"></i></div>
+            <ul class="submenu hidden">
+                <!-- Subcategory Links -->
+                <li><a href="#">Add category</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Add tag</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Add article</a></li>
+                <li><a href="#">Articles</a></li>
+            </ul>
+        </li>
+
+        <!-- Main Category: Events -->
+        <li>
+            <div class="summary">Events <i class="fas fa-chevron-down"></i></div>
+            <ul class="submenu hidden">
+                <!-- Subcategory Links -->
+                <li><a href="#">Add event</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </li>
+
+        <!-- Main Category: Jobs -->
+        <li>
+            <div class="summary">Jobs <i class="fas fa-chevron-down"></i></div>
+            <ul class="submenu hidden">
+                <!-- Subcategory Links -->
+                <li><a href="#">Add categories</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">Jobs</a></li>
+            </ul>
+        </li>
+    </ul>
+</aside>
+        <!-- Sidebar End -->
+        <!------------------------------------------------------------------------------------------------------>
+     <!-- Main Content Start -->
+
+      <main class="content">
+            <div class="breadcrumb" id="breadcrumb">Path</div>
+            <div class="title">Page Title</div>       
+      </main>
+      <!-- Main Content End -->
+
+
+   <script src="container.js"></script>
+   <script src="sidebar.js"></script>
+
+</body>
+</html>
