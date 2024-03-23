@@ -30974,3 +30974,55 @@ div.tagsinput span.tag a {
   }
 }
 /*# sourceMappingURL=../maps/vertical-layout-light/style.css.map */
+a {
+  text-decoration: none;
+  color: #000;
+}
+.controller {
+  position: relative;
+}
+.custom-checkbox {
+  transform: scale(1.5);
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 5px;
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
+.custom-checkbox:hover  ~ .pen-icon ,
+.custom-input:hover  ~ .pen-icon {
+  display: inline-block;
+}
+.custom-checkbox + button ,
+.custom-input + button {
+  display: none;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+.pen-icon {
+  cursor: pointer;
+  vertical-align: super;
+  display: none;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+.pen-icon:hover {
+  display: inline-block;
+}
+.custom-input {
+  background-color: transparent;
+  border: none;
+  width: unset !important;
+}
+.custom-input ~ .pen-icon {
+  position: absolute;
+  left: 0px;
+  top: -8px;
+  width: 3px;
+  -webkit-transform: translateX(-100%);
+  -moz-transform: translateX(-100%);
+  transform: translateX(-100%);
+}

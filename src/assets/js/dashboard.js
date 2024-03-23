@@ -480,3 +480,41 @@
 
   
 })(jQuery);
+
+
+function edit(penIcon) {
+  var inputContainer = penIcon.parentNode;
+  var input1 = inputContainer.querySelector('input');
+  var btn = inputContainer.querySelector('button');
+  input1.disabled = false;
+  penIcon.style.display ="none";
+  btn.style.display = "inline-block";
+}
+function disable(btn) {
+  var inputContainer = btn.parentNode;
+  var input1 = inputContainer.querySelector('input');
+  input1.disabled = true;
+  btn.style.display ="none";
+  input1.addEventListener('mouseover', function() {
+    var penIcon = this.parentElement.querySelector('.pen-icon');
+    if (btn.style.display =="none") {
+      penIcon.style.display = "inline-block";
+    }
+  });
+  input1.addEventListener('mouseout', function() {
+    var penIcon = this.parentElement.querySelector('.pen-icon');
+    if (penIcon.style.display =="inline-block") {
+      penIcon.style.display = "none";
+    }
+    penIcon.addEventListener('mouseover', function() {
+        penIcon.style.display = "inline-block";
+    });
+    penIcon.addEventListener('mouseout', function() {
+        penIcon.style.display = "none";
+    });
+  });
+}
+function deleteRow(button) {
+  var row = button.parentNode.parentNode;
+  row.parentNode.removeChild(row);
+}
