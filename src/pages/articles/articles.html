@@ -73,8 +73,8 @@
               <img class="img-xs rounded-circle" src="../../assets/images/avatar-default.svg" alt="Profile image"> </a>
             <div class="dropdown-menu dropdown-menu-right navbar-dropdown" aria-labelledby="UserDropdown">
               <div class="dropdown-header text-center">
-                <img class="img-md rounded-circle" src="../../assets/images/avatar-default.svg" alt="Profile image"
-                  width="80" height="80">
+                <img class="img-md rounded-circle" src="../../assets/images/avatar-default.svg" alt="Profile image" width="80"
+                  height="80">
                 <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
                 <p class="fw-light text-muted mb-0">allenmoreno@gmail.com</p>
               </div>
@@ -132,14 +132,12 @@
             </a>
             <div class="collapse" id="auther-basic">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Add Author</a>
-                </li>
+                <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/buttons.html">Add Author</a></li>
                 <li class="nav-item"> <a class="nav-link" href="../../pages/ui-features/dropdowns.html">Authors</a></li>
               </ul>
             </div>
             <!-----Job Seeker sub-category--------->
-            <a class="nav-link" href="../job seekers/job-seekers.html" aria-expanded="false"
-              aria-controls="job-seek-basic">
+            <a class="nav-link" href="../job seekers/job-seekers.html" aria-expanded="false" aria-controls="job-seek-basic">
               <i class="menu-icon mdi mdi-account-tie-outline"></i>
               <span class="menu-title">Job Seeker</span>
               <i class="menu-arrow"></i>
@@ -155,7 +153,7 @@
           <!-----------------------------------------------Articles category------------------------------------------------->
           <li class="nav-item nav-category">Articles</li>
           <li class="nav-item">
-            <a class="nav-link"data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
               <i class="menu-icon mdi mdi-folder-plus-outline"></i>
               <span class="menu-title">Add Category</span>
               <i class="menu-arrow"></i>
@@ -163,7 +161,7 @@
           </li>
           <!-------------------------->
           <li class="nav-item">
-            <a class="nav-link" href="javascript:0;" aria-expanded="false" aria-controls="charts">
+            <a class="nav-link" data-bs-toggle="collapse" href="#charts" aria-expanded="false" aria-controls="charts">
               <i class="menu-icon mdi mdi-folder-multiple-outline"></i>
               <span class="menu-title">Categories</span>
               <i class="menu-arrow"></i>
@@ -195,7 +193,7 @@
           </li>
           <!--------------------------->
           <li class="nav-item">
-            <a class="nav-link" href="../articles/articles.html" aria-expanded="false" aria-controls="icons">
+            <a class="nav-link" href="javascript:0;" aria-expanded="false" aria-controls="icons">
               <i class="menu-icon mdi mdi-file-document-multiple-outline"></i>
               <span class="menu-title">Articles</span>
               <i class="menu-arrow"></i>
@@ -227,7 +225,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+            <a class="nav-link" href="../categories/categories.html" aria-expanded="false" aria-controls="auth">
               <i class="menu-icon mdi mdi-earth-box"></i>
               <span class="menu-title">Categories</span>
               <i class="menu-arrow"></i>
@@ -257,13 +255,25 @@
             <div class="">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Categories</h4>
+                  <h4 class="card-title">Articles</h4>
                   <div class="table-responsive">
                     <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>
+                            Title
+                          </th>
+                          <th>
+                            Content
+                          </th>
+                          <th>
                             Category
+                          </th>
+                          <th>
+                            Tags 
+                          </th>
+                          <th>
+                            Edit
                           </th>
                           <th>
                             Delete
@@ -273,92 +283,142 @@
                       <tbody>
                         <tr>
                           <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 1" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            title 1
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 2" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            content 1
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs" onclick="deleteRow(this)">Delete</button>
+                            category 1
+                          </td>
+                          <td>
+                            tags 1
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 3" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            title 2
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 4" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            content 2
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
+                            category 2
+                          </td>
+                          <td>
+                            tags 2
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 5" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            title 3
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 6" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            content 3
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
+                            category 3
+                          </td>
+                          <td>
+                            tags 3
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
                           </td>
                         </tr>
                         <tr>
                           <td>
-                            <div class="controller">
-                              <input type="text" class="custom-input" value="Category 7" disabled>
-                              <button type="button" class="btn btn-primary btn-xs" onclick="disable(this)">Submit</button>
-                              <span class="pen-icon" onclick="edit(this)">&#9998;</span>
-                            </div>
+                            title 4
                           </td>
                           <td>
-                            <button type="button" class="btn btn-danger btn-xs"
-                              onclick="deleteRow(this)">Delete</button>
+                            content 4
+                          </td>
+                          <td>
+                            category 4
+                          </td>
+                          <td>
+                            tags 4
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            title 5
+                          </td>
+                          <td>
+                            content 5
+                          </td>
+                          <td>
+                            category 5
+                          </td>
+                          <td>
+                            tags 5
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            title 6
+                          </td>
+                          <td>
+                            content 6
+                          </td>
+                          <td>
+                            category 6
+                          </td>
+                          <td>
+                            tags 6
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            title 7
+                          </td>
+                          <td>
+                            content 7
+                          </td>
+                          <td>
+                            category 7
+                          </td>
+                          <td>
+                            tags 7
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-primary btn-sm" onclick="">Edit</button>
+                          </td>
+                          <td>
+                            <button type="button" class="btn btn-danger btn-sm" onclick="deleteRow(this)">Delete</button>
                           </td>
                         </tr>
                       </tbody>
