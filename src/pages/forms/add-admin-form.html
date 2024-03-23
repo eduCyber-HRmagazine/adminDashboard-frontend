@@ -46,7 +46,7 @@
     </div>
   </div>
   <!--  banner end -->
-<!---------------------------------------------------------------------------------------------------------------------->
+<!------------------------------>
   <!--navbar starts -->
   <nav
     class="navbar default-layout col-lg-12 col-12 p-0 d-flex align-items-top flex-row pt-5 mt-3"
@@ -145,7 +145,7 @@
       </button>
     </div>
   </nav>
-<!----------------------------------------------End Of NavBar----------------------------------------------------------->
+<!-----------End Of NavBar---------->
   <div class="container-fluid page-body-wrapper pt-0">
      <!-- theme setting panel start  -->
      <div class="theme-setting-wrapper">
@@ -173,7 +173,7 @@
       </div>
      </div>
      <!-- theme setting panel end  -->
-<!---------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------->
 <div id="right-sidebar" class="settings-panel">
   <i class="settings-close ti-close"></i>
   <ul class="nav nav-tabs border-top" id="setting-panel" role="tablist">
@@ -333,7 +333,7 @@
     <!-- chat tab ends -->
   </div>
 </div>
-<!--------------------------------------------------------------------------------------------------------------------->
+<!----------------------------------->
       <!-- partial -->
       <!-- partial:../../partials/_sidebar.html -->
       
@@ -484,10 +484,35 @@
           </li>
         </ul>
       </nav>
-<!--------------------------------------------------------End of SideBar------------------------------------------------->
+<!-----------End of SideBar------------->
 <!-------------THe Form----------->
         <div class="main-panel">
           <div class="content-wrapper">
+             <!--the search bar-->
+             <div class="row py-3 justify-content-between align-items-center">
+              <h2 class="fw-bold col-lg-auto">Admins</h2>
+              <div class="col-lg-auto">
+                <!-- Search Bar start -->
+                <div class="search-bar">
+                  <form action="">
+                    <div class="row g-1 justify-content-lg-end justify-content-start">
+                      <div class="col-6 col-lg-3 form-floating">
+                        <input type="text" class="form-control" id="title">
+                        <label for="title">Username</label>
+                      </div>
+                      <div class="col-6 col-lg-3 form-floating">
+                        <input type="text" class="form-control" id="title">
+                        <label for="title">Email</label>
+                      </div>
+                      <button class="col-auto btn border-0 btn-md" type="submit">
+                        <i class="icon-search fs-5"></i>
+                      </button>
+                    </div>
+                  </form>
+                </div>
+                <!-- Search Bar ends -->
+              </div>
+            </div>
             <div class="row">
               <!-- Changed the class from "col-md-6" to "col-12" -->
               <!-- "col-md-6" means the column takes up half the width on medium devices and larger -->
@@ -505,11 +530,10 @@
                       <div class="form-group">
                         <label for="exampleInputEmail1">Email address</label>
                         <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-                      </div>
-                      <!-- Added mobile number input ---- Type "number" to ensure numerical input -->         
+                      </div>        
                       <div class="form-group">
                          <label for="exampleInputMobile1">Mobile</label>
-                         <input type="number" class="form-control" id="exampleInputMobile1" placeholder="Mobile Number">
+                         <input type="text" class="form-control" id="exampleInputMobile1" placeholder="Mobile Number">
                       </div>
                       <div class="form-group">
                         <label for="exampleInputPassword1">Password</label>
@@ -520,17 +544,16 @@
                         <input type="password" class="form-control" id="exampleInputConfirmPassword1"
                           placeholder="Password">
                       </div>
-                      <!-- Added position input ---- Type "text" for general textual input -->
                       <div class="form-group">
                         <label for="exampleInputPosition1">Position</label>
                         <input type="text" class="form-control" id="exampleInputPosition1" placeholder="Position">
                       </div>
-                      <div class="form-check form-check-flat form-check-primary">
+                     <!-- <div class="form-check form-check-flat form-check-primary">
                         <label class="form-check-label">
                           <input type="checkbox" class="form-check-input">
                           Remember me
                         </label>
-                      </div>
+                      </div>-->
                       <button type="submit" class="btn btn-primary me-2">Submit</button>
                       <button class="btn btn-light">Cancel</button>
                     </form>
@@ -539,7 +562,7 @@
               </div>
             </div>
           </div> 
-<!----------------------------------------------------Form End----------------------------------------------------------->
+<!-----------------Form End------------------>
   <!-- partial:../../partials/_footer.html -->
         <footer class="footer">
   <div class="d-sm-flex justify-content-center justify-content-sm-between">
