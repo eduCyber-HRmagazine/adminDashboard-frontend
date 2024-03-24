@@ -1,14 +1,19 @@
 let inputs = document.querySelectorAll("input");
+let selects = document.querySelectorAll('select');
+let textareas = document.querySelectorAll('textarea');
 let userPicIcon = document.getElementById("user_pic_change_icon");
 let companyPicIcon = document.getElementById("company_pic_change_icon");
+let articlePicIcon = document.getElementById("article_change_icon");
 let socialMediaForm = document.getElementById("social_media");
 let paddingPic = document.getElementById("padding_pic");
 let submitPannel = document.getElementById("submit_pannel");
 let userPic = document.getElementById("user-pic");
 let companyPic = document.getElementById("company_pic");
+let articlePic = document.getElementById("article_pic");
 let userPicInput = document.getElementById("user_pic_input");
 let companyCard = document.getElementById("companyCard");
 let userCVInput = document.getElementById("user_cv_input");
+let articlePicInput = document.getElementById("article_pic_input");
 
 let form_edit = false;
 
@@ -24,6 +29,26 @@ document
       } else {
         input.classList.add("border-0");
         input.disabled = true;
+      }
+    });
+
+    selects.forEach((select) => {
+      if (form_edit) {
+        select.classList.remove("border-0");
+        select.disabled = false;
+      } else {
+        select.classList.add("border-0");
+        select.disabled = true;
+      }
+    });
+
+    textareas.forEach((textarea) => {
+      if (form_edit) {
+        textarea.classList.remove("border-0");
+        textarea.disabled = false;
+      } else {
+        textarea.classList.add("border-0");
+        textarea.disabled = true;
       }
     });
 
@@ -88,14 +113,52 @@ document
         });
       }
 
-      submitPannel.classList.remove("d-none");
-      paddingPic.classList.add("d-none");
-    } else {
-      userPicIcon.classList.add("d-none");
-      companyPicIcon.classList.add("d-none");
-      socialMediaForm.classList.add("d-none");
-      submitPannel.classList.add("d-none");
+      if (paddingPic) {
+        paddingPic.classList.add("d-none");
+      }
 
-      paddingPic.classList.remove("d-none");
+      if (articlePicInput) {
+        articlePicIcon.classList.remove("d-none");
+
+        // user pic
+        document
+          .getElementById("change-pic")
+          .addEventListener("click", function () {
+            articlePicInput.click();
+          });
+          articlePicInput.addEventListener("change", function () {
+          let file = this.files[0];
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+
+          reader.onload = function (e) {
+            console.log("uploaded");
+            articlePic.src = e.target.result;
+          };
+        });
+      }
+
+      submitPannel.classList.remove("d-none");
+    } else {
+      if (userPicInput) {
+      userPicIcon.classList.add("d-none");
+      }
+      if (companyCard) {
+        companyPicIcon.classList.add("d-none");
+      }
+
+      if (articlePicInput) {
+        articlePicIcon.classList.add("d-none");
+      }
+
+      if (socialMediaForm) {
+        socialMediaForm.classList.add("d-none");
+      }
+
+      submitPannel.classList.add("d-none");
+      
+      if (paddingPic) {
+        paddingPic.classList.remove("d-none");
+      }
     }
   });
