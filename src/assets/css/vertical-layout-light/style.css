@@ -31026,3 +31026,6 @@ a {
   -moz-transform: translateX(-100%);
   transform: translateX(-100%);
 }
+textarea#content {
+  min-height: 50px;
+}

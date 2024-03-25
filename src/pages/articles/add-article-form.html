@@ -353,7 +353,7 @@
               <a
                 class="nav-link"
                 data-bs-toggle="collapse"
-                href="../articles/add-article-form.html"
+                href="javascript:0;"
                 aria-expanded="false"
                 aria-controls="icons"
               >
@@ -458,98 +458,120 @@
         <div class="main-panel">
           <!-- content wrapper start -->
           <div class="content-wrapper">
-            <div class="row">
+            <div class="row justify-content-center">
               <div class="col-12 col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Add Admin form</h4>
+                    <h4 class="card-title">Add Article form</h4>
                     <p class="card-description">
-                      Add a new admin user to the dashboard
+                      Add a new Article to the Dashboard
                     </p>
-                    <form class="forms-sample" id="admin-create">
+                    <form class="forms-sample" id="article-create" enctype="multipart/form-data">
                       <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="title">Title</label>
                         <input
-                          type="email"
+                          type="text"
                           class="form-control"
-                          id="email"
-                          name="email"
-                          placeholder="Email"
+                          id="title"
+                          name="title"
+                          placeholder="Title"
                         />
                       </div>
                       <div class="form-group">
-                        <label for="password">Password</label>
+                        <label for="image">Image</label>
                         <input
-                          type="password"
+                          type="file"
                           class="form-control"
-                          id="password"
-                          name="password"
-                          placeholder="Password"
+                          id="image"
+                          name="image"
+                          placeholder="Image"
+                          accept="image/*"
                         />
                       </div>
                       <div class="form-group">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input
-                          type="password"
+                        <label for="content">Content</label>
+                        <textarea
                           class="form-control"
-                          id="confirm-password"
-                          name="confirm_password"
-                          placeholder="Password"
+                          id="content"
+                          name="content"
+                          placeholder="Content"
+                        ></textarea>
+                      </div>
+                      <!-- need change -->
+                      <div class="form-group">
+                        <label for="content">Tags</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="image"
+                          name="image"
+                          placeholder="Image"
+                          accept="image/*"
+                        />
+                      </div>
+                      <!-- need change -->
+                      <div class="form-group">
+                        <label for="content">Category</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="image"
+                          name="image"
+                          placeholder="Image"
+                          accept="image/*"
+                        />
+                      </div>
+                      <p class="card-description">
+                        Choose Source
+                      </p>
+                      <div class="form-group">
+                        <label for="source-name">Source name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="source-name"
+                          name="source-name"
+                          placeholder="Source name"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="source-link">Source link</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="source-link"
+                          name="source-link"
+                          placeholder="Source link"
+                        />
+                      </div>
+                      <p class="card-description">
+                        Choose Author
+                      </p>
+                      <!-- need change -->
+                      <div class="form-group">
+                        <label for="source-link">Author</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="source-link"
+                          name="source-link"
+                          placeholder="Source link"
+                        />
+                      </div>
+                      <p class="card-description">
+                        Enter YouTube Link
+                      </p>
+                      <div class="form-group">
+                        <label for="youTube-link">YouTube link</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="youTube-link"
+                          name="youTube-link"
+                          placeholder="YouTube link"
                         />
                       </div>
                     </form>
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="card-subtitle">Additional information</div>
-                    <div class="form-group">
-                      <label for="name" class="form-label">Name </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Name"
-                        form="admin-create"
-                        name="name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="mobile" class="form-label">Mobile </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="mobile"
-                        name="mobile"
-                        placeholder="Mobile No."
-                        form="admin-create"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="position" class="form-label">Position </label>
-                      <select
-                        class="form-control"
-                        form="admin-create"
-                        id="position"
-                        name="position"
-                      >
-                        <option value=""></option>
-                        <option value="">admin</option>
-                        <option value="">super admin</option>
-                      </select>
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn btn-primary me-2"
-                      form="admin-create"
-                    >
-                      Submit
-                    </button>
-                    <button class="btn btn-light" form="admin-create">
-                      Cancel
-                    </button>
                   </div>
                 </div>
               </div>
