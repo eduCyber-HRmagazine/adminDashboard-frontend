@@ -31026,3 +31026,11 @@ a {
   -moz-transform: translateX(-100%);
   transform: translateX(-100%);
 }
+#tooltipText{
+  visibility: hidden;
+  opacity: 0;
+}
+#tooltip:hover #tooltipText{
+  visibility: visible;
+  opacity: 1;
+}
