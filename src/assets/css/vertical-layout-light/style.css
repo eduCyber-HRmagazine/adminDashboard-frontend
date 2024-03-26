@@ -31015,3 +31015,6 @@ a {
   visibility: visible;
   opacity: 1;
 }
+textarea#content {
+  min-height: 50px;
+}
