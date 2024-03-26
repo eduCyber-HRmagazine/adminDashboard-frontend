@@ -35,7 +35,7 @@
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style.css"
     />
-    <!-- Add by shimaa  -->
+
     <link
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style2.css"
@@ -167,7 +167,7 @@
       </nav>
       <!-- navbar end -->
 
-      <div class="container-fluid page-body-wrapper">
+      <div class="container-fluid page-body-wrapper pt-0">
         <!-- theme setting panel start  -->
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="ti-settings"></i></div>
@@ -449,11 +449,11 @@
         </nav>
         <!-- sidebar end -->
 
-        <!--main part start, Task 13 Event Table created by Shimaa Mahmoud -->
+        <!-- main-panel-start -->
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row py-3 justify-content-between align-items-center">
-              <h2 class="fw-bold col-lg-auto">Events</h2>
+              <h2 class="fw-bold col-lg-auto">Categories</h2>
               <div class="col-lg-auto">
                 <!-- Search Bar start -->
                 <div class="search-bar">
@@ -461,23 +461,9 @@
                     <div
                       class="row g-1 justify-content-lg-end justify-content-start"
                     >
-                      <div class="col-6 col-lg-3 form-floating">
+                      <div class="col-4 col-lg-5 form-floating">
                         <input type="text" class="form-control" id="title" />
-                        <label for="title">Event title</label>
-                      </div>
-                      <div class="col-6 col-lg-3 form-floating">
-                        <input type="date" class="form-control" id="date" />
-                        <label for="date">Start date</label>
-                      </div>
-                      <div class="col-6 col-lg-3 form-floating">
-                        <select class="form-control bg-white">
-                          <option>-</option>
-                          <option>categroy #1</option>
-                          <option>categroy #2</option>
-                          <option>categroy #3</option>
-                          <option>categroy #4</option>
-                        </select>
-                        <label for="date">Select Category</label>
+                        <label for="title">Category</label>
                       </div>
                       <button
                         class="col-auto btn border-0 btn-md"
@@ -491,227 +477,220 @@
                 <!-- Search Bar ends -->
               </div>
             </div>
-
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Events Table</h4>
-                  <p class="card-description">List of all <code>Events</code></p>
-                  <div class="table-responsive content">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Event</th>
-                          <th>Description</th>
-                          <th>Address</th>
-                          <th>Start at</th>
-                          <th>Ends at</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 1</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 2</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 3</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 4</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 5</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 6</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 7</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 8</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 9</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 10</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 11</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 12</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 13</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 14</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 15</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                      </tbody>
-                    </table>
+            <div class="row">
+              <div class="">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Categories Table</h4>
+                    <p class="card-description">
+                      List of all <code>Article categories</code>
+                    </p>
+                    <div class="table-responsive content">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Abilities</th>
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <form action="">
+                                <div
+                                  class="position-relative input-parent d-inline-block"
+                                  onclick="edit(this)"
+                                >
+                                  <input
+                                    type="text"
+                                    class="custom-input d-inline-block"
+                                    value="test category 1"
+                                    disabled
+                                  />
+                                  <i
+                                    class="mdi mdi-pencil position-absolute pen-icon btn p-3"
+                                  ></i>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary btn-xs invisible"
+                                  >
+                                    Submit
+                                  </button>
+                                  <button
+                                    type="cancel"
+                                    class="btn btn-light btn-xs invisible"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <div class="d-flex">
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />Has Comment
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />
+                                    Has YouTube
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Source
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Author
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="py-2">
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-xs delete"
+                              >
+                                Delete
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <form action="">
+                                <div
+                                  class="position-relative input-parent d-inline-block"
+                                  onclick="edit(this)"
+                                >
+                                  <input
+                                    type="text"
+                                    class="custom-input d-inline-block"
+                                    value="test category 1"
+                                    disabled
+                                  />
+                                  <i
+                                    class="mdi mdi-pencil position-absolute pen-icon btn p-3"
+                                  ></i>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary btn-xs invisible"
+                                  >
+                                    Submit
+                                  </button>
+                                  <button
+                                    type="cancel"
+                                    class="btn btn-light btn-xs invisible"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <div class="d-flex">
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />Has Comment
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />
+                                    Has YouTube
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Source
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Author
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="py-2">
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-xs delete"
+                              >
+                                Delete
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
+          <!-- content-wrapper ends -->
+          <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -730,6 +709,7 @@
               >
             </div>
           </footer>
+          <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
@@ -752,17 +732,13 @@
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script
-      src="../../assets/js/jquery.cookie.js"
-      type="text/javascript"
-    ></script>
     <script src="../../assets/js/dashboard.js"></script>
-    <script src="../../assets/js/proBanner.js"></script>
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
 
-    <!-- Added by Shimaa -->
+    <!-------------- Added by Shimaa --------------->
     <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/edit.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

@@ -29,18 +29,20 @@
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
+    />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style.css"
     />
-    <!-- Add by shimaa  -->
-    <link
-      rel="stylesheet"
-      href="../../assets/css/vertical-layout-light/style2.css"
-    />
-
     <!-- endinject -->
   </head>
 
@@ -67,7 +69,7 @@
       </div>
       <!--  banner end -->
 
-      <!-- navbar start -->
+      <!--navbar starts -->
       <nav
         class="navbar default-layout col-lg-12 col-12 p-0 d-flex align-items-top flex-row pt-5 mt-3"
       >
@@ -84,10 +86,10 @@
             </button>
           </div>
           <div>
-            <a class="navbar-brand brand-logo" href="../../index.html">
+            <a class="navbar-brand brand-logo" href="index.html">
               <img src="../../assets/images/hr-logo.svg" alt="logo" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="../../index.html">
+            <a class="navbar-brand brand-logo-mini" href="index.html">
               <img src="../../assets/images/logo-hr-mini.svg" alt="logo" />
             </a>
           </div>
@@ -166,8 +168,7 @@
         </div>
       </nav>
       <!-- navbar end -->
-
-      <div class="container-fluid page-body-wrapper">
+      <div class="container-fluid page-body-wrapper pt-0">
         <!-- theme setting panel start  -->
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="ti-settings"></i></div>
@@ -448,270 +449,44 @@
           </ul>
         </nav>
         <!-- sidebar end -->
-
-        <!--main part start, Task 13 Event Table created by Shimaa Mahmoud -->
+        <!-- Start of Form page -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row py-3 justify-content-between align-items-center">
-              <h2 class="fw-bold col-lg-auto">Events</h2>
-              <div class="col-lg-auto">
-                <!-- Search Bar start -->
-                <div class="search-bar">
-                  <form action="">
-                    <div
-                      class="row g-1 justify-content-lg-end justify-content-start"
-                    >
-                      <div class="col-6 col-lg-3 form-floating">
-                        <input type="text" class="form-control" id="title" />
-                        <label for="title">Event title</label>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Jobs Category</h4>
+                    <p class="card-description">Add a new job category</p>
+                    <form class="forms-sample">
+                      <div class="form-group" onclick="edit()">
+                        <label for="exampleInputUsername1">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputUsername1"
+                          placeholder="category"
+                        />
                       </div>
-                      <div class="col-6 col-lg-3 form-floating">
-                        <input type="date" class="form-control" id="date" />
-                        <label for="date">Start date</label>
-                      </div>
-                      <div class="col-6 col-lg-3 form-floating">
-                        <select class="form-control bg-white">
-                          <option>-</option>
-                          <option>categroy #1</option>
-                          <option>categroy #2</option>
-                          <option>categroy #3</option>
-                          <option>categroy #4</option>
-                        </select>
-                        <label for="date">Select Category</label>
-                      </div>
-                      <button
-                        class="col-auto btn border-0 btn-md"
-                        type="submit"
-                      >
-                        <i class="icon-search fs-5"></i>
+                      <button type="submit" class="btn btn-primary me-2">
+                        Submit
                       </button>
-                    </div>
-                  </form>
-                </div>
-                <!-- Search Bar ends -->
-              </div>
-            </div>
-
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Events Table</h4>
-                  <p class="card-description">List of all <code>Events</code></p>
-                  <div class="table-responsive content">
-                    <table class="table table-striped">
-                      <thead>
-                        <tr>
-                          <th>Event</th>
-                          <th>Description</th>
-                          <th>Address</th>
-                          <th>Start at</th>
-                          <th>Ends at</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 1</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 2</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 3</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 4</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 5</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 6</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 7</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 8</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 9</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 10</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 11</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 12</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 13</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 14</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <a
-                              href="event-details.html"
-                              class="link-primary text-decoration-none"
-                              >Event 15</a
-                            >
-                          </td>
-                          <td>Lorem ipsum dolor</td>
-                          <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
-                          <td class="text-danger">12:00 PM</td>
-                        </tr>
-                      </tbody>
-                    </table>
+                      <button class="btn btn-light">Cancel</button>
+                    </form>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-center" id="padding_pic">
+                <div class="col-lg-9">
+                <img
+                  src="../../assets/images/hr-logo.svg"
+                  alt=""
+                  class="img-fluid rounded opacity-25"
+                />
+              </div>
+            </div>
             </div>
           </div>
-
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -733,6 +508,7 @@
         </div>
         <!-- main-panel ends -->
       </div>
+      <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
@@ -740,9 +516,9 @@
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="../../assets/vendors/progressbar.js/progressbar.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
@@ -752,17 +528,12 @@
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script
-      src="../../assets/js/jquery.cookie.js"
-      type="text/javascript"
-    ></script>
-    <script src="../../assets/js/dashboard.js"></script>
-    <script src="../../assets/js/proBanner.js"></script>
-    <!--Mahitab added this file on 19/3/2024-->
+    <script src="../../assets/js/file-upload.js"></script>
+    <script src="../../assets/js/typeahead.js"></script>
+    <script src="../../assets/js/select2.js"></script>
     <script src="../../assets/js/welcome-txt.js"></script>
-
-    <!-- Added by Shimaa -->
-    <script src="../../assets/js/table-pagination.js"></script>
     <!-- End custom js for this page-->
+    <script src="../../assets/js/categoryTagForm.js"></script>
+    <script src="../../assets/js/edit.js"></script>
   </body>
 </html>
