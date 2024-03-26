@@ -347,7 +347,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                href="../articles/add-article-form.html"
+                href="../../pages/articles/add-article-form.html"
                 aria-expanded="false"
                 aria-controls="icons"
               >
@@ -448,108 +448,61 @@
           </ul>
         </nav>
         <!-- sidebar end -->
+        <!-- Start of Form page -->
         <div class="main-panel">
-          <!-- content wrapper start -->
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-12 col-lg-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Add Admin form</h4>
-                    <p class="card-description">
-                      Add a new admin user to the dashboard
-                    </p>
-                    <form class="forms-sample" id="admin-create">
-                      <div class="form-group">
-                        <label for="email">Email</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          name="email"
-                          placeholder="Email"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="password">Password</label>
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="password"
-                          name="password"
-                          placeholder="Password"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="confirm-password">Confirm Password</label>
-                        <input
-                          type="password"
-                          class="form-control"
-                          id="confirm-password"
-                          name="confirm_password"
-                          placeholder="Password"
-                        />
-                      </div>
-                    </form>
-                  </div>
+              <div
+                class="col-lg-6 d-flex justify-content-center align-items-center"
+                id="padding_pic"
+              >
+                <div class="col-lg-9">
+                  <img
+                    src="../../assets/images/hr-logo.svg"
+                    alt=""
+                    class="img-fluid rounded opacity-25"
+                  />
                 </div>
               </div>
-              <div class="col-12 col-lg-6 grid-margin stretch-card">
+              <div class="col-lg-6 grid-margin stretch-card" id="tag">
                 <div class="card">
                   <div class="card-body">
-                    <div class="card-subtitle">Additional information</div>
-                    <div class="form-group">
-                      <label for="name" class="form-label">Name </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="name"
-                        placeholder="Name"
-                        form="admin-create"
-                        name="name"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="mobile" class="form-label">Mobile </label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="mobile"
-                        name="mobile"
-                        placeholder="Mobile No."
-                        form="admin-create"
-                      />
-                    </div>
-                    <div class="form-group">
-                      <label for="position" class="form-label">Position </label>
-                      <select
-                        class="form-control"
-                        form="admin-create"
-                        id="position"
-                        name="position"
+                    <h4 class="card-title">Tag Form</h4>
+                    <p class="card-description">Add a new article tag</p>
+                    <form class="forms-sample" id="tag-form">
+                      <div class="form-group">
+                        <label
+                          for="exampleInputEmail2"
+                          class="col-sm-3 col-form-label"
+                          >Tag</label
+                        >
+                        <div class="col-sm-9">
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleInputEmail2"
+                            placeholder="tag name"
+                            form="tag-form"
+                          />
+                        </div>
+                      </div>
+
+                      <button
+                        type="submit"
+                        class="btn btn-primary me-2"
+                        form="tag-form"
                       >
-                        <option value="">-</option>
-                        <option value="">admin</option>
-                        <option value="">super admin</option>
-                      </select>
-                    </div>
-                    <button
-                      type="submit"
-                      class="btn btn-primary me-2"
-                      form="admin-create"
-                    >
-                      Submit
-                    </button>
-                    <button class="btn btn-light" form="admin-create">
-                      Cancel
-                    </button>
+                        Submit
+                      </button>
+                      <button class="btn btn-light" form="tag-form">
+                        Cancel
+                      </button>
+                    </form>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <!-- content wrapper end -->
-          <!-- footer start -->
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -568,7 +521,6 @@
               >
             </div>
           </footer>
-          <!-- footer end -->
         </div>
         <!-- main-panel ends -->
       </div>
@@ -580,10 +532,9 @@
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <script src="../../assets/vendors/select2/select2.min.js"></script>
+    <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
@@ -592,12 +543,10 @@
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
+    <!-- Custom js for this page-->
     <script src="../../assets/js/file-upload.js"></script>
     <script src="../../assets/js/typeahead.js"></script>
     <script src="../../assets/js/select2.js"></script>
-    <!-- Custom js for this page-->
-    <script src="../../assets/js/dashboard.js"></script>
-    <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
     <!-- End custom js for this page-->
   </body>
