@@ -29,18 +29,20 @@
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/select2/select2.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
+    />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style.css"
     />
-
-    <link
-      rel="stylesheet"
-      href="../../assets/css/vertical-layout-light/style2.css"
-    />
-
     <!-- endinject -->
   </head>
 
@@ -67,7 +69,7 @@
       </div>
       <!--  banner end -->
 
-      <!-- navbar start -->
+      <!--navbar starts -->
       <nav
         class="navbar default-layout col-lg-12 col-12 p-0 d-flex align-items-top flex-row pt-5 mt-3"
       >
@@ -84,10 +86,10 @@
             </button>
           </div>
           <div>
-            <a class="navbar-brand brand-logo" href="../../index.html">
+            <a class="navbar-brand brand-logo" href="index.html">
               <img src="../../assets/images/hr-logo.svg" alt="logo" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="../../index.html">
+            <a class="navbar-brand brand-logo-mini" href="index.html">
               <img src="../../assets/images/logo-hr-mini.svg" alt="logo" />
             </a>
           </div>
@@ -166,8 +168,7 @@
         </div>
       </nav>
       <!-- navbar end -->
-
-      <div class="container-fluid page-body-wrapper">
+      <div class="container-fluid page-body-wrapper pt-0">
         <!-- theme setting panel start  -->
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="ti-settings"></i></div>
@@ -280,8 +281,7 @@
               <!-----Job Seeker sub-category--------->
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#emp-basic"
+                href="../../pages/users/employers.html"
                 aria-expanded="false"
                 aria-controls="emp-basic"
               >
@@ -295,8 +295,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/category_tag_form.html#category"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -309,8 +308,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/categories.html"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -323,8 +321,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tables"
+                href="../../pages/articles/category_tag_form.html#tag"
                 aria-expanded="false"
                 aria-controls="tables"
               >
@@ -337,8 +334,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tags"
+                href="../../pages/articles/tags.html"
                 aria-expanded="false"
                 aria-controls="tags"
               >
@@ -406,8 +402,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#auth"
+                href="../../pages/jobs/add_category_form.html"
                 aria-expanded="false"
                 aria-controls="auth"
               >
@@ -454,85 +449,44 @@
           </ul>
         </nav>
         <!-- sidebar end -->
-
-        <!-- main-panel-start -->
+        <!-- Start of Form page -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="col-lg-12 grid-margin stretch-card">
-              <div class="container mt-3">
-                <h2>Table for tags</h2>
-                <div style="height: 400px; overflow-y: auto">
-                  <table class="table table-bordered" style="width: 100%">
-                    <thead>
-                      <tr style="height: 400px">
-                        <th style="width: 100%">Tags</th>
-                        <th>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                          <button
-                            type="button"
-                            class="btn btn-outline-danger rounded-pill m-2"
-                            contenteditable="true"
-                            style="cursor: text"
-                          >
-                            Pending
-                          </button>
-                        </th>
-                      </tr>
-                    </thead>
-                  </table>
+            <div class="row">
+              <div class="col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="card-title">Jobs Category</h4>
+                    <p class="card-description">Add a new job category</p>
+                    <form class="forms-sample">
+                      <div class="form-group" onclick="edit()">
+                        <label for="exampleInputUsername1">Name</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="exampleInputUsername1"
+                          placeholder="category"
+                        />
+                      </div>
+                      <button type="submit" class="btn btn-primary me-2">
+                        Submit
+                      </button>
+                      <button class="btn btn-light">Cancel</button>
+                    </form>
+                  </div>
                 </div>
               </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-center" id="padding_pic">
+                <div class="col-lg-9">
+                <img
+                  src="../../assets/images/hr-logo.svg"
+                  alt=""
+                  class="img-fluid rounded opacity-25"
+                />
+              </div>
+            </div>
             </div>
           </div>
-          <!-- content-wrapper ends -->
-          <!-- partial:../../partials/_footer.html -->
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -551,10 +505,10 @@
               >
             </div>
           </footer>
-          <!-- partial -->
         </div>
         <!-- main-panel ends -->
       </div>
+      <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
@@ -562,9 +516,9 @@
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
+    <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
-    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="../../assets/vendors/progressbar.js/progressbar.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
@@ -574,17 +528,12 @@
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script
-      src="../../assets/js/jquery.cookie.js"
-      type="text/javascript"
-    ></script>
-    <script src="../../assets/js/dashboard.js"></script>
-    <script src="../../assets/js/proBanner.js"></script>
-    <!--Mahitab added this file on 19/3/2024-->
+    <script src="../../assets/js/file-upload.js"></script>
+    <script src="../../assets/js/typeahead.js"></script>
+    <script src="../../assets/js/select2.js"></script>
     <script src="../../assets/js/welcome-txt.js"></script>
-
-    <!-------------- Added by Shimaa --------------->
-    <script src="../../assets/js/table-pagination.js"></script>
     <!-- End custom js for this page-->
+    <script src="../../assets/js/categoryTagForm.js"></script>
+    <script src="../../assets/js/edit.js"></script>
   </body>
 </html>

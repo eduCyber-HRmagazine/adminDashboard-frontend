@@ -29,20 +29,18 @@
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/select2/select2.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/select2-bootstrap-theme/select2-bootstrap.min.css"
-    />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style.css"
     />
+
+    <link
+      rel="stylesheet"
+      href="../../assets/css/vertical-layout-light/style2.css"
+    />
+
     <!-- endinject -->
   </head>
 
@@ -69,7 +67,7 @@
       </div>
       <!--  banner end -->
 
-      <!--navbar starts -->
+      <!-- navbar start -->
       <nav
         class="navbar default-layout col-lg-12 col-12 p-0 d-flex align-items-top flex-row pt-5 mt-3"
       >
@@ -86,10 +84,10 @@
             </button>
           </div>
           <div>
-            <a class="navbar-brand brand-logo" href="index.html">
+            <a class="navbar-brand brand-logo" href="../../index.html">
               <img src="../../assets/images/hr-logo.svg" alt="logo" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="index.html">
+            <a class="navbar-brand brand-logo-mini" href="../../index.html">
               <img src="../../assets/images/logo-hr-mini.svg" alt="logo" />
             </a>
           </div>
@@ -168,6 +166,7 @@
         </div>
       </nav>
       <!-- navbar end -->
+
       <div class="container-fluid page-body-wrapper pt-0">
         <!-- theme setting panel start  -->
         <div class="theme-setting-wrapper">
@@ -281,8 +280,7 @@
               <!-----Job Seeker sub-category--------->
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#emp-basic"
+                href="../../pages/users/employers.html"
                 aria-expanded="false"
                 aria-controls="emp-basic"
               >
@@ -296,8 +294,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/category_tag_form.html#category"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -310,8 +307,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/categories.html"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -324,8 +320,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tables"
+                href="../../pages/articles/category_tag_form.html#tag"
                 aria-expanded="false"
                 aria-controls="tables"
               >
@@ -338,8 +333,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tags"
+                href="../../pages/articles/tags.html"
                 aria-expanded="false"
                 aria-controls="tags"
               >
@@ -407,8 +401,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#auth"
+                href="../../pages/jobs/add_category_form.html"
                 aria-expanded="false"
                 aria-controls="auth"
               >
@@ -455,92 +448,242 @@
           </ul>
         </nav>
         <!-- sidebar end -->
-        <!-- Start of Form page -->
+
+        <!-- main-panel-start -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row">
-              <div class="col-md-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <h4 class="card-title">Article Category</h4>
-                    <p class="card-description">Article Category</p>
-                    <form class="forms-sample">
-                      <div class="form-group">
-                        <label for="exampleInputUsername1">Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="exampleInputUsername1"
-                          placeholder="text"
-                        />
+            <div class="row py-3 justify-content-between align-items-center">
+              <h2 class="fw-bold col-lg-auto">Categories</h2>
+              <div class="col-lg-auto">
+                <!-- Search Bar start -->
+                <div class="search-bar">
+                  <form action="">
+                    <div
+                      class="row g-1 justify-content-lg-end justify-content-start"
+                    >
+                      <div class="col-4 col-lg-5 form-floating">
+                        <input type="text" class="form-control" id="title" />
+                        <label for="title">Category</label>
                       </div>
-                      <div
-                        class="form-check form-check-flat form-check-primary"
+                      <button
+                        class="col-auto btn border-0 btn-md"
+                        type="submit"
                       >
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" />
-                          Has Author
-                        </label>
-                      </div>
-                      <div
-                        class="form-check form-check-flat form-check-primary"
-                      >
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" />
-                          Has Source
-                        </label>
-                      </div>
-                      <div
-                        class="form-check form-check-flat form-check-primary"
-                      >
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" />
-                          Has YouTube link
-                        </label>
-                      </div>
-                      <div
-                        class="form-check form-check-flat form-check-primary"
-                      >
-                        <label class="form-check-label">
-                          <input type="checkbox" class="form-check-input" />
-                          Has Comment section
-                        </label>
-                      </div>
-                      <button type="submit" class="btn btn-primary me-2">
-                        Submit
+                        <i class="icon-search fs-5"></i>
                       </button>
-                      <button class="btn btn-light">Cancel</button>
-                    </form>
-                  </div>
+                    </div>
+                  </form>
                 </div>
+                <!-- Search Bar ends -->
               </div>
-              <div class="col-md-6 grid-margin stretch-card">
+            </div>
+            <div class="row">
+              <div class="">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Tag Form</h4>
-                    <p class="card-description">Form layout</p>
-                    <form class="forms-sample">
-                      <div class="form-group row">
-                        <label
-                          for="exampleInputEmail2"
-                          class="col-sm-3 col-form-label"
-                          >Tag</label
-                        >
-                        <div class="col-sm-9">
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="exampleInputEmail2"
-                            placeholder="text"
-                          />
-                        </div>
-                      </div>
-
-                      <button type="submit" class="btn btn-primary me-2">
-                        Submit
-                      </button>
-                      <button class="btn btn-light">Cancel</button>
-                    </form>
+                    <h4 class="card-title">Categories Table</h4>
+                    <p class="card-description">
+                      List of all <code>Article categories</code>
+                    </p>
+                    <div class="table-responsive content">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Category</th>
+                            <th>Abilities</th>
+                            <th>Delete</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>
+                              <form action="">
+                                <div
+                                  class="position-relative input-parent d-inline-block"
+                                  onclick="edit(this)"
+                                >
+                                  <input
+                                    type="text"
+                                    class="custom-input d-inline-block"
+                                    value="test category 1"
+                                    disabled
+                                  />
+                                  <i
+                                    class="mdi mdi-pencil position-absolute pen-icon btn p-3"
+                                  ></i>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary btn-xs invisible"
+                                  >
+                                    Submit
+                                  </button>
+                                  <button
+                                    type="cancel"
+                                    class="btn btn-light btn-xs invisible"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <div class="d-flex">
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />Has Comment
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />
+                                    Has YouTube
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Source
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Author
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="py-2">
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-xs delete"
+                              >
+                                Delete
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <form action="">
+                                <div
+                                  class="position-relative input-parent d-inline-block"
+                                  onclick="edit(this)"
+                                >
+                                  <input
+                                    type="text"
+                                    class="custom-input d-inline-block"
+                                    value="test category 1"
+                                    disabled
+                                  />
+                                  <i
+                                    class="mdi mdi-pencil position-absolute pen-icon btn p-3"
+                                  ></i>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary btn-xs invisible"
+                                  >
+                                    Submit
+                                  </button>
+                                  <button
+                                    type="cancel"
+                                    class="btn btn-light btn-xs invisible"
+                                  >
+                                    Cancel
+                                  </button>
+                                </div>
+                              </form>
+                            </td>
+                            <td>
+                              <div class="d-flex">
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />Has Comment
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      disabled
+                                    />
+                                    Has YouTube
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Source
+                                  </label>
+                                </div>
+                                <div
+                                  class="form-check form-check-flat form-check-primary mx-2"
+                                >
+                                  <label class="form-check-label">
+                                    <input
+                                      type="checkbox"
+                                      class="form-check-input"
+                                      checked
+                                      disabled
+                                    />
+                                    Has Author
+                                  </label>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="py-2">
+                              <button
+                                type="button"
+                                class="btn btn-danger btn-xs delete"
+                              >
+                                Delete
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -570,7 +713,6 @@
         </div>
         <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
     </div>
     <!-- container-scroller -->
     <!-- plugins:js -->
@@ -578,9 +720,9 @@
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
-    <script src="../../assets/vendors/select2/select2.min.js"></script>
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
+    <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
+    <script src="../../assets/vendors/progressbar.js/progressbar.min.js"></script>
     <!-- End plugin js for this page -->
     <!-- inject:js -->
     <script src="../../assets/js/off-canvas.js"></script>
@@ -590,10 +732,13 @@
     <script src="../../assets/js/todolist.js"></script>
     <!-- endinject -->
     <!-- Custom js for this page-->
-    <script src="../../assets/js/file-upload.js"></script>
-    <script src="../../assets/js/typeahead.js"></script>
-    <script src="../../assets/js/select2.js"></script>
+    <script src="../../assets/js/dashboard.js"></script>
+    <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
+
+    <!-------------- Added by Shimaa --------------->
+    <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/edit.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>
