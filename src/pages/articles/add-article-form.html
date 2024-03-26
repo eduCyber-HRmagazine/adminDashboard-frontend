@@ -281,8 +281,7 @@
               <!-----Job Seeker sub-category--------->
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#emp-basic"
+                href="../../pages/users/employers.html"
                 aria-expanded="false"
                 aria-controls="emp-basic"
               >
@@ -296,8 +295,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/category_form.html"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -310,8 +308,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#charts"
+                href="../../pages/articles/categories.html"
                 aria-expanded="false"
                 aria-controls="charts"
               >
@@ -324,8 +321,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tables"
+                href="../../pages/articles/tag_form.html"
                 aria-expanded="false"
                 aria-controls="tables"
               >
@@ -338,8 +334,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#tags"
+                href="../../pages/articles/tags.html"
                 aria-expanded="false"
                 aria-controls="tags"
               >
@@ -352,8 +347,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="javascript:0;"
+                href="../../pages/articles/add-article-form.html"
                 aria-expanded="false"
                 aria-controls="icons"
               >
@@ -407,8 +401,7 @@
             <li class="nav-item">
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#auth"
+                href="../../pages/jobs/add_category_form.html"
                 aria-expanded="false"
                 aria-controls="auth"
               >
@@ -458,7 +451,7 @@
         <div class="main-panel">
           <!-- content wrapper start -->
           <div class="content-wrapper">
-            <div class="row justify-content-center">
+            <div class="row">
               <div class="col-12 col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
@@ -478,6 +471,16 @@
                         />
                       </div>
                       <div class="form-group">
+                        <label for="content">Content</label>
+                        <textarea
+                          class="form-control"
+                          id="content"
+                          name="content"
+                          placeholder="Content"
+                          style="height: 10rem;"
+                        ></textarea>
+                      </div>
+                      <div class="form-group">
                         <label for="image">Image</label>
                         <input
                           type="file"
@@ -487,15 +490,6 @@
                           placeholder="Image"
                           accept="image/*"
                         />
-                      </div>
-                      <div class="form-group">
-                        <label for="content">Content</label>
-                        <textarea
-                          class="form-control"
-                          id="content"
-                          name="content"
-                          placeholder="Content"
-                        ></textarea>
                       </div>
                       <!-- need change -->
                       <div class="form-group">
@@ -511,70 +505,99 @@
                       </div>
                       <!-- need change -->
                       <div class="form-group">
-                        <label for="content">Category</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="image"
-                          name="image"
-                          placeholder="Image"
-                          accept="image/*"
-                        />
-                      </div>
-                      <p class="card-description">
-                        Choose Source
-                      </p>
-                      <div class="form-group">
-                        <label for="source-name">Source name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="source-name"
-                          name="source-name"
-                          placeholder="Source name"
-                        />
-                      </div>
-                      <div class="form-group">
-                        <label for="source-link">Source link</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="source-link"
-                          name="source-link"
-                          placeholder="Source link"
-                        />
-                      </div>
-                      <p class="card-description">
-                        Choose Author
-                      </p>
-                      <!-- need change -->
-                      <div class="form-group">
-                        <label for="source-link">Author</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="source-link"
-                          name="source-link"
-                          placeholder="Source link"
-                        />
-                      </div>
-                      <p class="card-description">
-                        Enter YouTube Link
-                      </p>
-                      <div class="form-group">
-                        <label for="youTube-link">YouTube link</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="youTube-link"
-                          name="youTube-link"
-                          placeholder="YouTube link"
-                        />
+                        <label for="categoryField">Category</label>
+                        <select name="" id="categoryField" class="form-control">
+                          <option value="">-</option>
+                          <option value="">Category#1</option>
+                          <option value="">Category#2</option>
+                          <option value="">Category#3</option>
+                        </select>
                       </div>
                     </form>
                   </div>
                 </div>
               </div>
+              <div class="col-lg-6 d-flex justify-content-center align-items-center" id="paddingPic">
+                <div class="col-lg-9">
+                <img
+                  src="../../assets/images/hr-logo.svg"
+                  alt=""
+                  class="img-fluid rounded opacity-25"
+                />
+              </div>
+            </div>
+              <div class="col-12 col-lg-6 grid-margin stretch-card d-none" id="additionalInfo">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-subtitle">Additional Information.</div>
+                    <div id="souceData">
+                    <p class="card-description">
+                      Choose Source
+                    </p>
+                    <div class="form-group">
+                      <label for="source-name">Source name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="source-name"
+                        name="source-name"
+                        placeholder="Source name"
+                      />
+                    </div>
+                    <div class="form-group">
+                      <label for="source-link">Source link</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="source-link"
+                        name="source-link"
+                        placeholder="Source link"
+                      />
+                    </div>
+                  </div>
+                  <div id="authorData">
+                    <p class="card-description">
+                      Choose Author
+                    </p>
+                    <!-- need change -->
+                    <div class="form-group">
+                      <label for="source-link">Author</label>
+                      <select name="" id="" class="form-control">
+                        <option value="">-</option>
+                        <option value="">Author#1</option>
+                        <option value="">Author#2</option>
+                        <option value="">Author#3</option>
+                      </select>
+                    </div>
+                    </div>
+                    <div id="youtubeLink">
+                    <p class="card-description">
+                      Enter YouTube Link
+                    </p>
+                    <div class="form-group">
+                      <label for="youTube-link">YouTube link</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="youTube-link"
+                        name="youTube-link"
+                        placeholder="YouTube link"
+                      />
+                    </div>
+                  </div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary me-2"
+                      form="authors-create"
+                    >
+                      Submit
+                    </button>
+                    <button class="btn btn-light" form="authors-create">
+                      Cancel
+                    </button>
+                    </div>
+                  </div>
+                </div>
             </div>
           </div>
           <!-- content wrapper end -->
@@ -609,8 +632,6 @@
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
-    <script src="assets/vendors/chart.js/Chart.min.js"></script>
-    <script src="assets/vendors/progressbar.js/progressbar.min.js"></script>
     <script src="../../assets/vendors/typeahead.js/typeahead.bundle.min.js"></script>
     <script src="../../assets/vendors/select2/select2.min.js"></script>
     <!-- End plugin js for this page -->
@@ -628,6 +649,74 @@
     <script src="../../assets/js/dashboard.js"></script>
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
+    <script>
+        categoryField = document.getElementById('categoryField');
+        categoryField.addEventListener('change', function() {
+            // Creating XMLHttpRequest object
+            let xhr = new XMLHttpRequest();
+
+            // Making our connection
+            let url = '#url';
+            xhr.open("POST", url, true);
+
+            let postObj = {
+                'category': this.value,
+                '_token': '{{csrf_token()}}'
+            }
+
+            let post = JSON.stringify(postObj);
+
+            xhr.setRequestHeader('Content-type', 'application/json; charset=UTF-8');
+            xhr.send(post);
+
+            // function execute after request is successful
+            xhr.onreadystatechange = function () {
+                if (this.readyState == 4 && this.status == 200) {
+                    console.log(this.response);
+                    const res = JSON.parse(this.response);
+                    // expected response
+                    // {
+                    //    "source": 1/0,
+                    //    "youtube": 1/0,
+                    //    "author": 1/0
+                    // }
+                      document.getElementById('paddingPic').classList.add('d-none');
+                      sourceData = document.getElementById('souceData')
+                      youtubeLink = document.getElementById('youtubeLink')
+                      authorData = document.getElementById('authorData')
+
+                      [sourceData, youtubeLink, authorData].forEach(data => {
+                        data.classList.add('d-none')
+                        data.querySelectAll('select, input').forEach(input => {
+                          input.disabled = true
+                        })
+                      })
+
+                      if(res.source === 1) {
+                        sourceData.classList.remove('d-none')
+                        sourceData.querySelectAll('select, input').forEach(input => {
+                          input.disabled = false
+                        })
+                      }
+
+                      if(res.youtube === 1) {
+                        youtubeLink.classList.remove('d-none')
+                        youtubeLink.querySelectAll('select, input').forEach(input => {
+                          input.disabled = false
+                        })
+                      }
+
+                      if (res.author === 1) {
+                        authorData.classList.remove('d-none')
+                        authorData.querySelectAll('select, input').forEach(input => {
+                          input.disabled = false
+                        })
+                      }
+                }
+            }
+
+        });
+    </script>
     <!-- End custom js for this page-->
   </body>
 </html>
