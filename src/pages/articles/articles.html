@@ -287,8 +287,7 @@
               <!-----Job Seeker sub-category--------->
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#emp-basic"
+                href="../../pages/users/employers.html"
                 aria-expanded="false"
                 aria-controls="emp-basic"
               >
@@ -495,6 +494,32 @@
                         </select>
                         <label for="date">Select Category</label>
                       </div>
+                      <div class="col-4 col-lg-2 d-flex flex-column justify-content-center">
+                        <div class="row">
+                          <label for="approved" class="form-check-label">
+                            <input
+                              type="checkbox"
+                              id="approved"
+                              class="form-check-input"
+                              name="status"
+                              value="approved"
+                            />
+                            Approved
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label for="declined" class="form-check-label">
+                            <input
+                              type="checkbox"
+                              id="declined"
+                              class="form-check-input"
+                              name="status"
+                              value="declined"
+                            />
+                            Declined
+                          </label>
+                        </div>
+                      </div>
                       <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
@@ -511,7 +536,8 @@
               <div class="">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Articles</h4>
+                    <h4 class="card-title">Articles Table</h4>
+                    <p class="card-description">List of all <code>Articles</code></p>
                     <div class="table-responsive content">
                       <table class="table table-striped">
                         <thead>
@@ -520,6 +546,7 @@
                             <th>Author</th>
                             <th>Category</th>
                             <th class="w-25">Tags</th>
+                            <th>Approved</th>
                           </tr>
                         </thead>
                         <tbody>
@@ -542,6 +569,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -562,6 +590,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -580,6 +609,7 @@
                                 ><span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -601,6 +631,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -617,6 +648,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -636,6 +668,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
@@ -654,6 +687,7 @@
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
+                            <td>✔️</td>
                           </tr>
                         </tbody>
                       </table>

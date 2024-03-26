@@ -232,12 +232,16 @@
               <div class="collapse" id="admin-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/users/add-admin-form.html"
+                    <a
+                      class="nav-link"
+                      href="../../pages/users/add-admin-form.html"
                       >Add Admin</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/users/admins-table.html"
+                    <a
+                      class="nav-link"
+                      href="../../pages/users/admins-table.html"
                       >Admins</a
                     >
                   </li>
@@ -283,8 +287,7 @@
               <!-----Job Seeker sub-category--------->
               <a
                 class="nav-link"
-                data-bs-toggle="collapse"
-                href="#emp-basic"
+                href="../../pages/users/employers.html"
                 aria-expanded="false"
                 aria-controls="emp-basic"
               >
@@ -462,6 +465,7 @@
           <div class="content-wrapper">
             <div class="row py-3 justify-content-between align-items-center">
               <h2 class="fw-bold col-lg-auto">Job Seekers</h2>
+
               <div class="col-lg-auto">
                 <!-- Search Bar start -->
                 <div class="search-bar">
@@ -476,6 +480,32 @@
                       <div class="col-6 col-lg-3 form-floating">
                         <input type="text" class="form-control" id="title" />
                         <label for="title">Email</label>
+                      </div>
+                      <div class="col-4 col-lg-2 d-flex flex-column justify-content-center">
+                        <div class="row">
+                          <label for="active" class="form-check-label">
+                            <input
+                              type="checkbox"
+                              id="active"
+                              class="form-check-input"
+                              name="status"
+                              value="active"
+                            />
+                            Active
+                          </label>
+                        </div>
+                        <div class="row">
+                          <label for="blocked" class="form-check-label">
+                            <input
+                              type="checkbox"
+                              id="blocked"
+                              class="form-check-input"
+                              name="status"
+                              value="blocked"
+                            />
+                            Blocked
+                          </label>
+                        </div>
                       </div>
                       <button
                         class="col-auto btn border-0 btn-md"
@@ -493,14 +523,15 @@
               <div class="">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Job Seekers</h4>
+                    <h4 class="card-title">Job Seekers Table</h4>
+                    <p class="card-description">List of all <code>Job seekers</code></p>
                     <div class="table-responsive content">
                       <table class="table table-striped">
                         <thead>
                           <tr>
                             <th>Name</th>
                             <th>E-mail</th>
-                            <th>Mobile</th>
+                            <th>Mobile No.</th>
                             <th>Position</th>
                             <th>Active</th>
                           </tr>
@@ -511,7 +542,8 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -522,35 +554,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active1"
-                                  id="checkbox1"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>❌</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -561,35 +573,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active2"
-                                  id="checkbox2"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -600,35 +592,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active3"
-                                  id="checkbox3"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>❌</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -639,35 +611,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active4"
-                                  id="checkbox4"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -678,35 +630,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active5"
-                                  id="checkbox5"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -717,35 +649,15 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active6"
-                                  id="checkbox6"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>✔️</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck</a
+                              >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
@@ -756,28 +668,7 @@
                               <a href="tel:+4733378901">+47 333 78 901</a>
                             </td>
                             <td>Developer</td>
-                            <td>
-                              <div class="controller">
-                                <input
-                                  type="checkbox"
-                                  name="active7"
-                                  id="checkbox7"
-                                  class="custom-checkbox"
-                                  checked
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
+                            <td>✔️</td>
                           </tr>
                         </tbody>
                       </table>
