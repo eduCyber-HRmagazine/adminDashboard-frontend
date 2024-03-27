@@ -17,34 +17,28 @@
 .form-group-group .form-group textarea {
   min-height: 150px; /* Set the minimum height in pixels */
 }
+
 /* Styling for the tags container */
 .tags-scrollable-container {
-    max-height: 200px; 
-    overflow-x: auto; /* Horizontal scrollbar */
-    overflow-y: auto; /* Vertical scrollbar */
-    border: 1px solid lightgray;
-    padding: 20px;
-    display: flex; /* Display grids in a row */
-    gap: 12px; /* Space between each grid */
-}
-
-/* Styling for the tag categories */
-.tag-category {
-    display: grid; /* Use grid layout for tag categories */
-    grid-template-columns: repeat(2, auto); /* Two columns for each list */
-    gap: 7px; /* Gap between columns */
-    margin-right: 45px; /* Add space between categories */
+  max-height: 200px; 
+  overflow-x: auto; 
+  overflow-y: auto; 
+  border: 1px solid lightgray;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, auto) 150px repeat(3, auto) 100px repeat(2, auto); 
+  grid-auto-rows: 50px; /* Set row height */
+  gap: 10px; /* Set gap between tags */
 }
   
-  
-  /* Styling for the tag */
+/* Styling for the tag */
 .tag {
   display: flex;
   align-items: center;
   background-color: #C3D7E1; 
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  margin-left: 15px; /* Margin between tags */
+  margin-left: 20px; /* Margin between tags */
   position: relative; /* Positioning for the triangle */
   min-width: max-content; /* Ensure tag width fits content */
   height:34px;
