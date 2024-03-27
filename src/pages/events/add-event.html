@@ -29,15 +29,6 @@
     />
     <!-- endinject -->
     <!-- Plugin css for this page -->
-    <link
-      rel="stylesheet"
-      href="../../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.css"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="../../assets/js/select.dataTables.min.css"
-    />
     <!-- End plugin css for this page -->
     <!-- inject:css -->
     <link
@@ -72,9 +63,9 @@
           </div>
         </div>
       </div>
-      <!-- banner end -->
+      <!--  banner end -->
 
-      <!--navbar starts -->
+      <!-- navbar start -->
       <nav
         class="navbar default-layout col-lg-12 col-12 p-0 d-flex align-items-top flex-row pt-5 mt-3"
       >
@@ -91,11 +82,11 @@
             </button>
           </div>
           <div>
-            <a class="navbar-brand brand-logo" href="index.html">
+            <a class="navbar-brand brand-logo" href="../../index.html">
               <img src="../../assets/images/hr-logo.svg" alt="logo" />
             </a>
-            <a class="navbar-brand brand-logo-mini" href="index.html">
-              <img src="../../assets/images/hr-logo.svg" alt="logo" />
+            <a class="navbar-brand brand-logo-mini" href="../../index.html">
+              <img src="../../assets/images/logo-hr-mini.svg" alt="logo" />
             </a>
           </div>
         </div>
@@ -109,6 +100,7 @@
               <h3 class="welcome-sub-text w-75" id="quote"></h3>
             </li>
           </ul>
+
           <ul class="navbar-nav ms-auto">
             <li class="nav-item dropdown d-none d-lg-block user-dropdown">
               <a
@@ -146,6 +138,7 @@
                   My Profile
                   <span class="badge badge-pill badge-danger">1</span></a
                 >
+
                 <a class="dropdown-item"
                   ><i
                     class="dropdown-item-icon mdi mdi-power text-primary me-2"
@@ -161,8 +154,6 @@
               </div>
             </li>
           </ul>
-
-          <!----------------------------------------------end of navbar ----------------------------------------------------->
           <button
             class="navbar-toggler navbar-toggler-right d-lg-none align-self-center"
             type="button"
@@ -172,10 +163,9 @@
           </button>
         </div>
       </nav>
-      <!--navbar ends -->
+      <!-- navbar end -->
 
-      <!-- partial -->
-      <div class="container-fluid page-body-wrapper pt-0">
+      <div class="container-fluid page-body-wrapper">
         <!-- theme setting panel start  -->
         <div class="theme-setting-wrapper">
           <div id="settings-trigger"><i class="ti-settings"></i></div>
@@ -233,12 +223,16 @@
               <div class="collapse" id="admin-basic">
                 <ul class="nav flex-column sub-menu">
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/users/add-admin-form.html"
+                    <a
+                      class="nav-link"
+                      href="../../pages/users/add-admin-form.html"
                       >Add Admin</a
                     >
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="../../pages/users/admins-table.html"
+                    <a
+                      class="nav-link"
+                      href="../../pages/users/admins-table.html"
                       >Admins</a
                     >
                   </li>
@@ -458,248 +452,256 @@
         </nav>
         <!-- sidebar end -->
 
-        <!-- partial -->
+        <!-- main part start -->
         <div class="main-panel">
           <div class="content-wrapper">
-            <div class="row">
-              <div class="">
+            <h2 class="pt-5 fw-bold">Add Event</h2>
+            <div class="row py-3">
+              <div class="col-12 col-lg-6 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
-                    <h4 class="card-title">Categories</h4>
-                    <div class="table-responsive content">
-                      <table class="table table-striped">
-                        <thead>
-                          <tr>
-                            <th>Category</th>
-                            <th>Delete</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 1"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 2"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 3"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 4"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 5"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td>
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 6"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td >
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                          <tr>
-                            <td class="py-2">
-                              <div class="controller">
-                                <input
-                                  type="text"
-                                  class="custom-input"
-                                  value="Category 7"
-                                  disabled
-                                />
-                                <button
-                                  type="button"
-                                  class="btn btn-primary btn-xs"
-                                  onclick="disable(this)"
-                                >
-                                  Submit
-                                </button>
-                                <span class="pen-icon" onclick="edit(this)"
-                                  >&#9998;</span
-                                >
-                              </div>
-                            </td >
-                            <td class="py-2">
-                              <button
-                                type="button"
-                                class="btn btn-danger btn-xs"
-                                onclick="deleteRow(this)"
-                              >
-                                Delete
-                              </button>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <h4 class="card-title">Add Event form</h4>
+                    <p class="card-description">
+                      Add a new event to the dashboard
+                    </p>
+                    <form class="forms-sample" id="event-create">
+                      <div class="form-group">
+                        <label for="title">Title</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="title"
+                          name="title"
+                          placeholder="Title"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="fromDate">From</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="fromDate"
+                          name="fromDate"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="toDate">To</label>
+                        <input
+                          type="date"
+                          class="form-control"
+                          id="toDate"
+                          name="toDate"
+                          placeholder=""
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="" class="form-label">Image</label>
+                        <input
+                          type="file"
+                          class="form-control"
+                          id="image"
+                          name="image"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="address" class="form-label">Address</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="address"
+                          name="address"
+                          placeholder="Address"
+                        />
+                      </div>
+                      <div class="form-group">
+                        <label for="speakers" class="form-label"
+                          >Speakers</label
+                        >
+                        <input
+                          type="text"
+                          class="form-control"
+                          id="speakers"
+                          name="speakers"
+                          placeholder="Speakers"
+                        />
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-6 grid-margin stretch-card">
+                <div class="card">
+                  <div class="card-body">
+                    <div class="card-subtitle">Additional information</div>
+                    <div class="form-group">
+                      <label for="map" class="form-label pt-2"
+                        >Location Map</label
+                      >
+                      <section id="cities_near_me" class="">
+                        <div class="d-flex flex-row justify-content-between">
+                          <p class="fw-bold">Cities near me</p>
+                          <a href=""
+                            ><p class="fw-bold text-primary">
+                              View all 500+ cities
+                            </p></a
+                          >
+                        </div>
+                        <div
+                          id="map"
+                          class="mx-auto mt-1"
+                          style="height: 50vh; width: 100%"
+                        >
+                          <input
+                            type="hidden"
+                            class="form-control"
+                            id="longitude"
+                            name="longitude"
+                            form="event-create"
+                          />
+                          <input
+                            type="hidden"
+                            class="form-control"
+                            id="latitude"
+                            name="latitude"
+                            form="event-create"
+                          />
+                        </div>
+                      </section>
                     </div>
+
+                    <div class="form-group">
+                      <label for="description" class="form-label"
+                        >Description
+                      </label>
+                      <textarea
+                        class="form-control"
+                        id="description"
+                        name="description"
+                        form="event-create"
+                        placeholder="Description"
+                        style="height: 6rem"
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-12 grid-margin stretch-card">
+                <div
+                  class="card"
+                  style="
+                    background-color: #f1f1f1;
+                    padding: 10px;
+                    border: 30px solid white;
+                  "
+                >
+                  <div class="card-body">
+                    <h4 class="card-title">Sechedual Event-Agenda</h4>
+                    <!-- Event Agenda Section -->
+                    <div class="form-group">
+                      <label for="event-agenda">Scheduling Event</label>
+                      <div id="event-agenda">
+                        <div
+                          class="day-box table-responsive"
+                          style="
+                            background-color: white;
+                            border-radius: 20px;
+                            margin-bottom: 20px;
+                            padding: 15px;
+                            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                          "
+                        >
+                          <h4
+                            class="day-header"
+                            style="
+                              background-color: #f1f1f1;
+                              padding: 10px;
+                              border-radius: 7px;
+                            "
+                          >
+                            Day 1
+                          </h4>
+                          <table class="table" id="agenda-table-day-1">
+                            <thead>
+                              <tr>
+                                <th>Topic</th>
+                                <th>From (Time)</th>
+                                <th>To (Time)</th>
+                                <th>Speaker</th>
+                                <th>Actions</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    name="topic_day_1[]"
+                                    placeholder="Topic"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="time"
+                                    class="form-control"
+                                    name="from_time_day_1[]"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="time"
+                                    class="form-control"
+                                    name="to_time_day_1[]"
+                                  />
+                                </td>
+                                <td>
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    name="speaker_day_1[]"
+                                    placeholder="Speaker"
+                                  />
+                                </td>
+                                <td>
+                                  <button
+                                    type="button"
+                                    class="btn btn-danger btn-sm remove-row"
+                                  >
+                                    -
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-info btn-sm"
+                                    onclick="addRowToDay(1)"
+                                  >
+                                    +
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+
+                    <button
+                      type="submit"
+                      class="btn btn-primary me-2"
+                      form="event-create"
+                    >
+                      Submit
+                    </button>
+                    <button class="btn btn-light" form="event-create">
+                      Cancel
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!--End of the form-->
           <footer class="footer">
             <div
               class="d-sm-flex justify-content-center justify-content-sm-between"
@@ -719,16 +721,17 @@
             </div>
           </footer>
         </div>
+        <!-- main-panel ends -->
       </div>
-      <!-- page-body-wrapper ends -->
     </div>
-    <!-- container-scroller -->
 
+    <!-- container-scroller -->
     <!-- plugins:js -->
     <script src="../../assets/vendors/js/vendor.bundle.base.js"></script>
     <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <!-- endinject -->
     <!-- Plugin js for this page -->
+    <script src="../../assets/vendors/bootstrap-datepicker/bootstrap-datepicker.min.js"></script>
     <script src="../../assets/vendors/chart.js/Chart.min.js"></script>
     <script src="../../assets/vendors/progressbar.js/progressbar.min.js"></script>
     <!-- End plugin js for this page -->
@@ -746,10 +749,13 @@
     ></script>
     <script src="../../assets/js/dashboard.js"></script>
     <script src="../../assets/js/proBanner.js"></script>
-    <!-- <script src="../../assets/js/Chart.roundedBarCharts.js"></script> -->
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
-    <script src="../../assets/js/table-pagination.js"></script>
+    <!--added this file on 19/3/2024-->
+    <script src="../../assets/js/add-event.js"></script>
+
+    <!-- google-map-location -->
+    <script src="../../assets/js/google-map-location.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>
