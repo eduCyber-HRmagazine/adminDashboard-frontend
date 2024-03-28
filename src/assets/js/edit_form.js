@@ -166,7 +166,7 @@ document
           };
         });
       }
-      
+
       if(tagDivs) {
         tagDivs.forEach(div => {
           div.classList.remove('d-none')
@@ -204,6 +204,8 @@ document
       if(tagDivs) {
         tagDivs.forEach(div => {
           checkbox = div.querySelector('.tag-checkbox')
+          console.log(checkbox)
+          console.log(checkbox.checked)
           if(checkbox.checked) {
             div.classList.remove('d-none')
           } else {

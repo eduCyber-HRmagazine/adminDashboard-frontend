@@ -12,7 +12,13 @@
 .form-group input[type="file"] {
   padding-top: 10px; 
   padding-bottom: 10px; 
+} 
+
+.tag label {
+  margin-bottom: 0;
+  margin-left: 0.3rem;
 }
+
 
 .form-group-group .form-group textarea {
   min-height: 150px; /* Set the minimum height in pixels */
@@ -27,80 +33,7 @@
   padding: 10px;
   border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(3, auto) 100px repeat(3, auto) 100px repeat(2, auto); 
-  grid-auto-rows: 25px; /* Set row height */
-  gap: 10px; /* Set gap between tags */
-}
-  
-/* Styling for the tag */
-.tag {
-  display: flex;
-  align-items: center;
-  background-color: #C3D7E1; 
-  border-bottom-right-radius: 4px;
-  border-top-right-radius: 4px;
-  margin-left: 1rem; /* Margin between tags */
-  position: relative; /* Positioning for the triangle */
-  min-width: max-content; /* Ensure tag width fits content */
-  height:1.75rem;
-}
-
-/* Styling for the checkbox */
-.tag input[type="checkbox"] {
-  visibility: hidden;
-  width: 20px; /* Width of the checkbox */
-  height: 20px; /* Height of the checkbox */
-  border-radius: 50%; /* Make the checkbox circle */
-  background-color: white; /* Initial color of the checkbox */
-  border: 1px solid #000; /* Border color of the checkbox */
-  position: absolute; /* Positioning for the checkbox */
-  left: -20px; /* Position checkbox inside the triangle */
-  top: 50%; /* Align checkbox vertically */
-  transform: translateY(-50%); /* Adjust position vertically */
-}
-
-/* Styling for the label */
-.tag label {
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  padding: 0 12px;
-  position: relative; /* For the positioning of the circle and triangle */
-  -webkit-user-select: none; /* Support for Safari */
-  user-select: none;
-}
-
-/* Styling for the pointer (triangle) */
-.tag::before {
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 17.5px 17.5px 17.5px 0; /* Set border width for triangle */
-  border-color: transparent #C3D7E1 transparent transparent; /* Set border color */
-  position: absolute;
-  left: -16px; /* Position triangle to the left of the tag */
-  top: 50%; /* Position triangle vertically at the center */
-  transform: translateY(-50%); /* Adjust position vertically */
-}
-
-
-/* Updated styles for the checkbox pseudo-element */
-.tag label::before {
-  content: '';
-  position: absolute;
-  top: 50%; /* Maintain vertical centering */
-  left: 3%; /* Move horizontally to the center */
-  transform: translate(-50%, -50%);  /* Center the element */
-  width: 14px;
-  height: 14px;
-  border-radius: 50%; /* Makes the square a circle */
-  background: #eee;
-  border: 2px solid #ccc; /* Adjust color as needed */
-}
-
-/* Styling for the checkbox when it's checked */
-.tag input[type="checkbox"]:checked + label::before {
-  background: #373737; 
-  border-color:2px solid #8d8989; 
+  grid-template-columns: repeat(3, auto) 125px repeat(3, auto) 125px repeat(2, auto); 
+  grid-auto-rows: 35px; /* Set row height */
+  gap: 15px; /* Set gap between tags */
 }
