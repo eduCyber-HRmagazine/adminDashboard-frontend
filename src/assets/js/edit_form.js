@@ -4,16 +4,19 @@ let textareas = document.querySelectorAll('textarea');
 let userPicIcon = document.getElementById("user_pic_change_icon");
 let companyPicIcon = document.getElementById("company_pic_change_icon");
 let articlePicIcon = document.getElementById("article_change_icon");
+let eventPicIcon = document.getElementById("event_change_icon");
 let socialMediaForm = document.getElementById("social_media");
 let paddingPic = document.getElementById("padding_pic");
 let submitPannel = document.getElementById("submit_pannel");
 let userPic = document.getElementById("user-pic");
 let companyPic = document.getElementById("company_pic");
 let articlePic = document.getElementById("article_pic");
+let eventPic = document.getElementById("event_pic");
 let userPicInput = document.getElementById("user_pic_input");
 let companyCard = document.getElementById("companyCard");
 let userCVInput = document.getElementById("user_cv_input");
 let articlePicInput = document.getElementById("article_pic_input");
+let eventPicInput = document.getElementById("event_pic_input");
 
 let form_edit = false;
 
@@ -117,6 +120,26 @@ document
         paddingPic.classList.add("d-none");
       }
 
+      if (eventPicInput) {
+        eventPicIcon.classList.remove("d-none");
+
+        // user pic
+        document
+          .getElementById("change-pic")
+          .addEventListener("click", function () {
+            eventPicInput.click();
+          });
+        eventPicInput.addEventListener("change", function () {
+          let file = this.files[0];
+          const reader = new FileReader();
+          reader.readAsDataURL(file);
+
+          reader.onload = function (e) {
+            eventPic.src = e.target.result;
+          };
+        });
+      }
+
       if (articlePicInput) {
         articlePicIcon.classList.remove("d-none");
 
@@ -141,8 +164,13 @@ document
       submitPannel.classList.remove("d-none");
     } else {
       if (userPicInput) {
-      userPicIcon.classList.add("d-none");
+        userPicIcon.classList.add("d-none");
       }
+
+      if (eventPicInput) {
+        eventPicIcon.classList.add("d-none");
+      }
+
       if (companyCard) {
         companyPicIcon.classList.add("d-none");
       }
