@@ -17,14 +17,20 @@ let companyCard = document.getElementById("companyCard");
 let userCVInput = document.getElementById("user_cv_input");
 let articlePicInput = document.getElementById("article_pic_input");
 let eventPicInput = document.getElementById("event_pic_input");
+let tagDivs = document.querySelectorAll('.tag')
 
 let form_edit = false;
 
+editForm()
+
 document
   .getElementById("edit_user_button")
-  .addEventListener("click", function () {
+  .addEventListener("click", function() {
     form_edit = !form_edit;
+    editForm()
+  });
 
+  function editForm() {
     inputs.forEach((input) => {
       if (form_edit) {
         input.classList.remove("border-0");
@@ -37,10 +43,10 @@ document
 
     selects.forEach((select) => {
       if (form_edit) {
-        select.classList.remove("border-0");
+        select.style.outline = '0.1px solid darkgray';
         select.disabled = false;
       } else {
-        select.classList.add("border-0");
+        select.style.outline = 'none';
         select.disabled = true;
       }
     });
@@ -161,6 +167,12 @@ document
         });
       }
 
+      if(tagDivs) {
+        tagDivs.forEach(div => {
+          div.classList.remove('d-none')
+        })
+      }
+
       submitPannel.classList.remove("d-none");
     } else {
       if (userPicInput) {
@@ -188,5 +200,18 @@ document
       if (paddingPic) {
         paddingPic.classList.remove("d-none");
       }
+
+      if(tagDivs) {
+        tagDivs.forEach(div => {
+          checkbox = div.querySelector('.tag-checkbox')
+          console.log(checkbox)
+          console.log(checkbox.checked)
+          if(checkbox.checked) {
+            div.classList.remove('d-none')
+          } else {
+            div.classList.add('d-none')
+          }
+        })
+      }
     }
-  });
+  }
