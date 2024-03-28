@@ -23,11 +23,12 @@
   max-height: 200px; 
   overflow-x: auto; 
   overflow-y: auto; 
-  border: 1px solid lightgray;
-  padding: 20px;
+  border: 0.5px solid #e2e5e9;
+  padding: 10px;
+  border-radius: 10px;
   display: grid;
-  grid-template-columns: repeat(3, auto) 150px repeat(3, auto) 100px repeat(2, auto); 
-  grid-auto-rows: 50px; /* Set row height */
+  grid-template-columns: repeat(3, auto) 100px repeat(3, auto) 100px repeat(2, auto); 
+  grid-auto-rows: 25px; /* Set row height */
   gap: 10px; /* Set gap between tags */
 }
   
@@ -38,10 +39,10 @@
   background-color: #C3D7E1; 
   border-bottom-right-radius: 4px;
   border-top-right-radius: 4px;
-  margin-left: 20px; /* Margin between tags */
+  margin-left: 1rem; /* Margin between tags */
   position: relative; /* Positioning for the triangle */
   min-width: max-content; /* Ensure tag width fits content */
-  height:34px;
+  height:1.75rem;
 }
 
 /* Styling for the checkbox */
@@ -63,7 +64,7 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 0 12px;
   position: relative; /* For the positioning of the circle and triangle */
   -webkit-user-select: none; /* Support for Safari */
   user-select: none;

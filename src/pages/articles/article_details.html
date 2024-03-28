@@ -44,6 +44,7 @@
       rel="stylesheet"
       href="../../assets/css/vertical-layout-light/style.css"
     />
+    <link rel="stylesheet" href="../../assets/css/custom-add-article.css" />
     <!-- endinject -->
   </head>
 
@@ -552,7 +553,8 @@ Quos consectetur blanditiis dolore quisquam aliquam in minus omnis iusto, nam, q
                                         id=""
                                         form="edit-article"
                                         disabled
-                                        class="form-select ps-0 bg-transparent text-black fs-xxs outline-0 border-0"
+                                        class="form-control ps-0 bg-transparent text-black fs-xxs border-0"
+                                        style="outline: none;"
                                       >
                                         <option value="jhon-doe" selected>
                                           John Doe
@@ -584,7 +586,7 @@ Quos consectetur blanditiis dolore quisquam aliquam in minus omnis iusto, nam, q
                             </div>
                           </div>
                           <div
-                            class="row border-top pt-3 justify-content-between"
+                            class="row border-top border-bottom py-3 justify-content-between"
                           >
                             <div class="col-lg-auto">
                               <p class="card-text fw-bold lh-1">
@@ -632,6 +634,314 @@ Quos consectetur blanditiis dolore quisquam aliquam in minus omnis iusto, nam, q
                                   disabled
                                 />
                               </p>
+                            </div>
+                          </div>
+                          <div class="row justify-content-between align-items-start">
+                            <div class="form-group col-lg-8 border-end mt-1">
+                              <label>Tags</label>
+                              <!-- Placeholder for tags checkboxes -->
+                              <div
+                                class="tags-scrollable-container"
+                                id="tags-container"
+                              >
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Alps"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Alps">Alps</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Austria"
+                                    class="tag-checkbox"
+                                    checked
+                                    disabled
+                                  />
+                                  <label for="tag-Austria">Austria</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-France"
+                                    class="tag-checkbox"
+                                    disabled
+                                    checked
+                                  />
+                                  <label for="tag-France">France</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Germany"
+                                    class="tag-checkbox"
+                                    disabled
+                                    checked
+                                  />
+                                  <label for="tag-Germany">Germany</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-London"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-London">London</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Paris"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Paris">Paris</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Cairo"
+                                    class="tag-checkbox"
+                                    disabled
+                                    checked
+                                  />
+                                  <label for="tag-Cairo">Cairo</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Animals"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Animals">Animals</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Buildings"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Buildings">Buildings</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Castle"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Castle">Castle</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Clouds"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Clouds">Clouds</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Park"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Park">Park</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Mountains"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Mountains">Mountains</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-People"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-People">People</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Town"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Town">Town</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Trees"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Trees">Trees</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Water"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Water">Water</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Forest"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Forest">Forest</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Woods"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Woods">Woods</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Ocean"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Ocean">Ocean</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Colors"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Colors">Colors</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Hotels"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Hotels">Hotels</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Butterflies"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Butterflies"
+                                    >Butterflies</label
+                                  >
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Circus"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Circus">Circus</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Cafes"
+                                    disabled
+                                    class="tag-checkbox"
+                                  />
+                                  <label for="tag-Cafes">Cafes</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Fog"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Fog">Fog</label>
+                                </div>
+                                <div class="tag">
+                                  <input
+                                    type="checkbox"
+                                    name="tags[]"
+                                    id="tag-Flowers"
+                                    class="tag-checkbox"
+                                    disabled
+                                  />
+                                  <label for="tag-Flowers">Flowers</label>
+                                </div>
+                              </div>
+                              <!--End of tags-->
+                            </div>
+                            <div class="form-group col-lg-4">
+                              
+                              <p class="card-text lh-1 mt-2">Category  <i class="mdi mdi-bookmark-box-multiple-outline"></i></p>
+                              <p class="card-text lh-1">
+                              <select
+                                id="category"
+                                name="category"
+                                class="form-control bg-transparent text-black fs-xxs border-0"
+                                style="outline: none;"
+                              >
+                                <!-- Category options -->
+                                <option value="News">News</option>
+                                <option value="Technology">Technology</option>
+                                <option value="Entertaiment">
+                                  Entertaiment
+                                </option>
+                                <option value="Economy">Economy</option>
+                              </select>
+                            </p>
                             </div>
                           </div>
                         </div>
