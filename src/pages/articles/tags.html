@@ -464,12 +464,15 @@
                         <input type="text" class="form-control" id="title" />
                         <label for="title">Tag</label>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+
+                      <button id="showAllTable" class="col-auto btn btn-sm">Show All</button>
+
                     </div>
                   </form>
                 </div>
@@ -485,8 +488,8 @@
                     <div class="table-responsive content">
                       <table class="table table-striped">
                     <thead>
-                      <tr>
-                        <td class="fw-bold w-25" rowspan="100">Tags</td>
+                      <tr >
+                        <td class="fw-bold w-25" rowspan="100" >Tags</td>
                           <td>
                             <form action="">
                               <div
@@ -536,7 +539,7 @@
                               <input
                                 type="text"
                                 class="custom-input d-inline-block"
-                                value="tag1"
+                                value="tag2"
                                 disabled
                               />
                               <i
@@ -576,7 +579,7 @@
                               <input
                                 type="text"
                                 class="custom-input d-inline-block"
-                                value="tag1"
+                                value="tag3"
                                 disabled
                               />
                               <i
@@ -616,7 +619,7 @@
                               <input
                                 type="text"
                                 class="custom-input d-inline-block"
-                                value="tag1"
+                                value="tag2"
                                 disabled
                               />
                               <i
@@ -656,7 +659,7 @@
                               <input
                                 type="text"
                                 class="custom-input d-inline-block"
-                                value="tag1"
+                                value="tag3"
                                 disabled
                               />
                               <i
@@ -1018,11 +1021,13 @@
     <script src="../../assets/js/dashboard.js"></script>
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
+    <script src="../../assets/js/stylingTags.js"></script>
+    <script src="../../assets/js/edit.js"></script>
 
     <!-------------- Added by Shimaa --------------->
     <script src="../../assets/js/table-pagination.js"></script>
-    <script src="../../assets/js/stylingTags.js"></script>
-    <script src="../../assets/js/edit.js"></script>
+    <script src="../../assets/js/table-filter-tag.js"></script>
+
     <!-- End custom js for this page-->
   </body>
 </html>

@@ -464,12 +464,15 @@
                         <input type="text" class="form-control" id="title" />
                         <label for="title">Category</label>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+
+                      <button id="showAllTable" class="col-auto btn btn-sm">Show All</button>
+
                     </div>
                   </form>
                 </div>
@@ -493,7 +496,7 @@
                             <th>Delete</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
                           <tr>
                             <td>
                               <form action="">
