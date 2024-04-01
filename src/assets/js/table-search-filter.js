@@ -1,4 +1,6 @@
 
+
+
 // filter for ( admins table && job-seekers table && employers table
 
 const nameInput = document.getElementById('title');

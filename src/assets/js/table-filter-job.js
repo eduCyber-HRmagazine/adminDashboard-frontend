@@ -18,7 +18,7 @@ function filterTable() {
 
   rows.forEach((row) => {
     const name = row.cells[0].textContent.toLowerCase();
-    const employer = row.cells[1].textContent.toLowerCase();
+    const employer= row.cells[1].textContent.toLowerCase();
     const category = row.cells[2].textContent;
 
     // filters by input values and checkboxes

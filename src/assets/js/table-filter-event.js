@@ -1,5 +1,5 @@
 
-// filter for 
+// filter for event table
 
 const nameInput = document.getElementById('title');
 const dateInput = document.getElementById('date');

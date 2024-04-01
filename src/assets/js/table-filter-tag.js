@@ -1,3 +1,5 @@
+//filter for tag table
+
 // input element 
 const filterInput = document.getElementById('title');
 // all the tags

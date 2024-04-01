@@ -1,3 +1,5 @@
+
+//filter for author table
 const nameInput = document.getElementById('title');
 const emailInput = document.getElementById('email');
 const activeCheckbox = document.getElementById('active');

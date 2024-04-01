@@ -1,3 +1,5 @@
+//filter for categories table
+
 // input element 
 document.getElementById('title').addEventListener('input', function() {
     let filterValue = this.value.trim().toLowerCase();
