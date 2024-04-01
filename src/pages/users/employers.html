@@ -468,8 +468,8 @@
                       class="row g-1 justify-content-lg-end justify-content-start"
                     >
                       <div class="col-4 col-lg-3 form-floating">
-                        <input type="text" class="form-control" id="name" />
-                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="title" />
+                        <label for="title">Name</label>
                       </div>
                       <div class="col-4 col-lg-3 form-floating">
                         <input type="email" class="form-control" id="email" />
@@ -501,12 +501,14 @@
                           </label>
                         </div>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">Show All</button>
+
                     </div>
                   </form>
                 </div>
@@ -534,15 +536,15 @@
                             <th>Active</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck1</a>
                             </td>
-                            <td>mail@email.com</td>
+                            <td>mail11@email.com</td>
                             <td>+9999999999</td>
                             <td>HR</td>
                             <td>✔️</td>
@@ -552,9 +554,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck1</a>
                             </td>
-                            <td>mail@email.com</td>
+                            <td>mail2@email.com</td>
                             <td>+9999999999</td>
                             <td>HR</td>
                             <td>❌</td>
@@ -564,9 +566,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck2</a>
                             </td>
-                            <td>mail@email.com</td>
+                            <td>mail2@email.com</td>
                             <td>+9999999999</td>
                             <td>HR</td>
                             <td>✔️</td>
@@ -576,9 +578,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck3</a>
                             </td>
-                            <td>mail@email.com</td>
+                            <td>mail3@email.com</td>
                             <td>+9999999999</td>
                             <td>HR</td>
                             <td>✔️</td>
@@ -777,8 +779,10 @@
     <!-- <script src="../../assets/js/Chart.roundedBarCharts.js"></script> -->
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
-    <script src="../../assets/js/table-pagination.js"></script>
     <script src="../../assets/js/stylingTags.js"></script>
+     <!-- Added by Shimaa -->
+     <script src="../../assets/js/table-pagination.js"></script>
+     <script src="../../assets/js/table-search-filter.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

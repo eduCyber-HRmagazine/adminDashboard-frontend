@@ -465,24 +465,27 @@
                         <label for="title">Job title</label>
                       </div>
                       <div class="col-6 col-lg-3 form-floating">
-                        <input type="text" class="form-control" id="city" />
-                        <label for="city">City</label>
+                        <input type="text" class="form-control" id="employer" />
+                        <label for="employer">Employer</label>
                       </div>
                       <div class="col-6 col-lg-3 form-floating">
-                        <select class="form-control bg-white">
+                        <select class="form-control bg-white" id="category">
                           <option>-</option>
-                          <option>categroy #1</option>
-                          <option>categroy #2</option>
-                          <option>categroy #3</option>
-                          <option>categroy #4</option>
+                          <option value="category #1">category #1</option>
+                          <option value="category #2">category #2</option>
+                          <option value="category #3">category #3</option>
+                          <option value="category #4">category #4</option>
                         </select>
-                        <label for="date">Select Category</label>
+                        <label for="category">Select Category</label>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">
+                        Show All
                       </button>
                     </div>
                   </form>
@@ -506,155 +509,185 @@
                           <th>No of applied</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="dataTable">
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
-                              >HR</a
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
+                              >HR 1</a
                             >
                           </td>
-                          <td>Name</td>
-                          <td>Category1</td>
+                          <td>Name 1</td>
+                          <td>category #1</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
-                              >HR</a
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
+                              >HR 2</a
                             >
                           </td>
-                          <td>Name</td>
-                          <td>Category1</td>
+                          <td>Name 2</td>
+                          <td>category #1</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
-                              >HR</a
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
+                              >HR 3</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category #2</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category #3</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category #4</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                         <tr>
                           <td>
-                            <a href="job-details.html" class="link-primary text-decoration-none"
+                            <a
+                              href="job-details.html"
+                              class="link-primary text-decoration-none"
                               >HR</a
                             >
                           </td>
                           <td>Name</td>
-                          <td>Category1</td>
+                          <td>category</td>
                           <td>111</td>
                         </tr>
                       </tbody>
@@ -718,6 +751,7 @@
 
     <!-------------- Added by Shimaa --------------->
     <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/table-filter-job.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

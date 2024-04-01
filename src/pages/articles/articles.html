@@ -474,18 +474,18 @@
                         <label for="tag">Tag</label>
                       </div>
                       <div class="col-4 col-lg-2 form-floating">
-                        <input type="text" class="form-control" id="date" />
-                        <label for="date">Author</label>
+                        <input type="text" class="form-control" id="author" />
+                        <label for="author">Author</label>
                       </div>
                       <div class="col-4 col-lg-2 form-floating">
-                        <select class="form-control bg-white">
-                          <option>-</option>
-                          <option>categroy #1</option>
-                          <option>categroy #2</option>
-                          <option>categroy #3</option>
-                          <option>categroy #4</option>
+                        <select class="form-control bg-white" id="category">
+                          <option value="">-</option>
+                          <option value="categroy #1">categroy #1</option>
+                          <option value="categroy #2">categroy #2</option>
+                          <option value="categroy #3">categroy #3</option>
+                          <option value="categroy #4">categroy #4</option>
                         </select>
-                        <label for="date">Select Category</label>
+                        <label for="category">Select Category</label>
                       </div>
                       <div class="col-4 col-lg-2 d-flex flex-column justify-content-center">
                         <div class="row">
@@ -513,12 +513,13 @@
                           </label>
                         </div>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">Show All</button>
                     </div>
                   </form>
                 </div>
@@ -532,7 +533,7 @@
                     <h4 class="card-title">Articles Table</h4>
                     <p class="card-description">List of all <code>Articles</code></p>
                     <div class="table-responsive content">
-                      <table class="table table-striped">
+                      <table class="table table-striped" id="filter-table">
                         <thead>
                           <tr>
                             <th>Title</th>
@@ -542,7 +543,7 @@
                             <th>Approved</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
                           <tr>
                             <td>
                               <a
@@ -552,7 +553,7 @@
                               >
                             </td>
                             <td>Author 1</td>
-                            <td>category 1</td>
+                            <td>categroy #1</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span
@@ -569,18 +570,18 @@
                               <a
                                 href="article_details.html"
                                 class="link-primary text-decoration-none"
-                                >title 1</a
+                                >title 2</a
                               >
                             </td>
                             <td>Author 2</td>
-                            <td>category 2</td>
+                            <td>categroy #2</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
-                                <span class="tag">tag1</span
-                                ><span class="tag">tag1</span
-                                ><span class="tag">tag1</span>
-                                <span class="tag">tag1</span>
-                                <span class="tag">tag1</span>
+                                <span class="tag">tag2</span
+                                ><span class="tag">tag2</span
+                                ><span class="tag">tag2</span>
+                                <span class="tag">tag2</span>
+                                <span class="tag">tag2</span>
                               </div>
                             </td>
                             <td>✔️</td>
@@ -590,11 +591,11 @@
                               <a
                                 href="article_details.html"
                                 class="link-primary text-decoration-none"
-                                >title 1</a
+                                >title 3</a
                               >
                             </td>
                             <td>Author 3</td>
-                            <td>category 3</td>
+                            <td>categroy #3</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span
@@ -602,18 +603,18 @@
                                 ><span class="tag">tag1</span>
                               </div>
                             </td>
-                            <td>✔️</td>
+                            <td>❌</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="article_details.html"
                                 class="link-primary text-decoration-none"
-                                >title 1</a
+                                >title 4</a
                               >
                             </td>
                             <td>Author 4</td>
-                            <td>category 4</td>
+                            <td>categroy #4</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span
@@ -635,24 +636,24 @@
                               >
                             </td>
                             <td>Author 5</td>
-                            <td>category 5</td>
+                            <td>categroy #1</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span>
                               </div>
                             </td>
-                            <td>✔️</td>
+                            <td>❌</td>
                           </tr>
                           <tr>
                             <td>
                               <a
                                 href="article_details.html"
                                 class="link-primary text-decoration-none"
-                                >title 1</a
+                                >title 2</a
                               >
                             </td>
                             <td>Author 6</td>
-                            <td>category 6</td>
+                            <td>categroy #2</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span
@@ -668,11 +669,11 @@
                               <a
                                 href="article_details.html"
                                 class="link-primary text-decoration-none"
-                                >title 1</a
+                                >title 3</a
                               >
                             </td>
                             <td>Author 7</td>
-                            <td>category 7</td>
+                            <td>categroy #3</td>
                             <td class="p-1">
                               <div class="d-flex flex-wrap">
                                 <span class="tag">tag1</span
@@ -739,8 +740,10 @@
     <!-- <script src="../../assets/js/Chart.roundedBarCharts.js"></script> -->
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
-    <script src="../../assets/js/table-pagination.js"></script>
     <script src="../../assets/js/stylingTags.js"></script>
+    <!--Added by Shimaa -->
+    <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/table-filter-article.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

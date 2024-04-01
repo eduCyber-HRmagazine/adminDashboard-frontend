@@ -463,8 +463,8 @@
                         <label for="title">Name</label>
                       </div>
                       <div class="col-6 col-lg-3 form-floating">
-                        <input type="text" class="form-control" id="title" />
-                        <label for="title">Email</label>
+                        <input type="text" class="form-control" id="email" />
+                        <label for="email">Email</label>
                       </div>
                       <div class="col-4 col-lg-2 d-flex flex-column justify-content-center">
                         <div class="row">
@@ -492,12 +492,14 @@
                           </label>
                         </div>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">Show All</button>
+
                     </div>
                   </form>
                 </div>
@@ -524,7 +526,7 @@
                             <th>Bio</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
                           <tr>
                             <td class="py-1">
                               <img
@@ -536,9 +538,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck1</a>
                             </td>
-                            <td>test@example.com</td>
+                            <td>test1@example.com</td>
                             <td>+2012222222</td>
                             <td>Backend mentor</td>
                             <td>❌</td>
@@ -556,9 +558,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck2</a>
                             </td>
-                            <td>test@example.com</td>
+                            <td>test2@example.com</td>
                             <td>+2012222222</td>
                             <td>Backend mentor</td>
                             <td>❌</td>
@@ -576,9 +578,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck2</a>
                             </td>
-                            <td>test@example.com</td>
+                            <td>test2@example.com</td>
                             <td>+2012222222</td>
                             <td>Backend mentor</td>
                             <td>❌</td>
@@ -596,9 +598,9 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a>
+                                >Herman Beck1</a>
                             </td>
-                            <td>test@example.com</td>
+                            <td>test3@example.com</td>
                             <td>+2012222222</td>
                             <td>Backend mentor</td>
                             <td>✔️</td>
@@ -793,9 +795,11 @@
     <script src="../../assets/js/template.js"></script>
     <script src="../../assets/js/settings.js"></script>
     <script src="../../assets/js/todolist.js"></script>
-
+    <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
+    <!-- Added by Shimaa -->
     <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/table-filter-author.js"></script>
     <!-- endinject -->
   </body>
 </html>

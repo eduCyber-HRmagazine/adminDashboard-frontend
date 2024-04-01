@@ -467,22 +467,23 @@
                         <input type="date" class="form-control" id="date" />
                         <label for="date">Start date</label>
                       </div>
-                      <div class="col-6 col-lg-3 form-floating">
-                        <select class="form-control bg-white">
+                      <!-- <div class="col-6 col-lg-3 form-floating">
+                        <select class="form-control bg-white" id="category">
                           <option>-</option>
-                          <option>categroy #1</option>
-                          <option>categroy #2</option>
-                          <option>categroy #3</option>
-                          <option>categroy #4</option>
+                          <option value="categroy #1">categroy #1</option>
+                          <option value="categroy #2">categroy #2</option>
+                          <option value="categroy #3">categroy #3</option>
+                          <option value="categroy #4">categroy #4</option>
                         </select>
                         <label for="date">Select Category</label>
-                      </div>
-                      <button
+                      </div> -->
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">Show All</button>
                     </div>
                   </form>
                 </div>
@@ -506,7 +507,7 @@
                           <th>Ends at</th>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="dataTable">
                         <tr>
                           <td>
                             <a
@@ -517,7 +518,7 @@
                           </td>
                           <td>Lorem ipsum dolor</td>
                           <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
+                          <td class="text-danger">04/01/2024</td>
                           <td class="text-danger">12:00 PM</td>
                         </tr>
                         <tr>
@@ -530,7 +531,7 @@
                           </td>
                           <td>Lorem ipsum dolor</td>
                           <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
+                          <td class="text-danger">04/05/2024</td>
                           <td class="text-danger">12:00 PM</td>
                         </tr>
                         <tr>
@@ -543,7 +544,7 @@
                           </td>
                           <td>Lorem ipsum dolor</td>
                           <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
+                          <td class="text-danger">04/01/2024</td>
                           <td class="text-danger">12:00 PM</td>
                         </tr>
                         <tr>
@@ -556,7 +557,7 @@
                           </td>
                           <td>Lorem ipsum dolor</td>
                           <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
+                          <td class="text-danger">03/31/2024</td>
                           <td class="text-danger">12:00 PM</td>
                         </tr>
                         <tr>
@@ -569,7 +570,7 @@
                           </td>
                           <td>Lorem ipsum dolor</td>
                           <td>Lorem ipsum dolor</td>
-                          <td class="text-danger">8:00 AM</td>
+                          <td class="text-danger">03/31/2024</td>
                           <td class="text-danger">12:00 PM</td>
                         </tr>
                         <tr>
@@ -761,6 +762,7 @@
 
     <!-- Added by Shimaa -->
     <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/table-filter-event.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>

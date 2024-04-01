@@ -471,8 +471,8 @@
                         <label for="title">Name</label>
                       </div>
                       <div class="col-6 col-lg-3 form-floating">
-                        <input type="text" class="form-control" id="title" />
-                        <label for="title">Email</label>
+                        <input type="text" class="form-control" id="email" />
+                        <label for="email">Email</label>
                       </div>
                       <div class="col-4 col-lg-2 d-flex flex-column justify-content-center">
                         <div class="row">
@@ -500,12 +500,13 @@
                           </label>
                         </div>
                       </div>
-                      <button
+                      <!-- <button
                         class="col-auto btn border-0 btn-md"
                         type="submit"
                       >
                         <i class="icon-search fs-5"></i>
-                      </button>
+                      </button> -->
+                      <button id="showAllTable" class="col-auto btn btn-sm btn-dark">Show All</button>
                     </div>
                   </form>
                 </div>
@@ -529,18 +530,18 @@
                             <th>Active</th>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="dataTable">
                           <tr>
                             <td>
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a
+                                >shimaa 1</a
                               >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
-                                >someone@example.com</a
+                                >email 1@example.com</a
                               >
                             </td>
                             <td>
@@ -554,12 +555,12 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a
+                                >name 2</a
                               >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
-                                >someone@example.com</a
+                                >mail 3@example.com</a
                               >
                             </td>
                             <td>
@@ -573,12 +574,12 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a
+                                >name 3</a
                               >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
-                                >someone@example.com</a
+                                >shimaa 3@example.com</a
                               >
                             </td>
                             <td>
@@ -592,12 +593,12 @@
                               <a
                                 href="user_info.html"
                                 class="link-primary text-decoration-none"
-                                >Herman Beck</a
+                                >Shimaa Beck</a
                               >
                             </td>
                             <td class="py-1">
                               <a href="mailto:someone@example.com"
-                                >someone@example.com</a
+                                >shimaa222@example.com</a
                               >
                             </td>
                             <td>
@@ -721,7 +722,9 @@
     <!-- <script src="../../assets/js/Chart.roundedBarCharts.js"></script> -->
     <!--Mahitab added this file on 19/3/2024-->
     <script src="../../assets/js/welcome-txt.js"></script>
+    <!-- Added by Shimaa -->
     <script src="../../assets/js/table-pagination.js"></script>
+    <script src="../../assets/js/table-search-filter.js"></script>
     <!-- End custom js for this page-->
   </body>
 </html>
